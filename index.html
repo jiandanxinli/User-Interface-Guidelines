@@ -825,18 +825,18 @@
           <div class="ui-group">
             <div class="ui-introduce">
               <p>警告分为成功、提示、警告、错误四种样式，自动适应PC端和Mobile端</p>
-              <p>默认不吸顶，如需吸顶请在“.j-alert”层添加“.j-alert-fixed”样式</p>
+              <p>默认不吸顶，如需吸顶请在“.j-alert”层添加“.j-alert-fixed”样式，吸顶会自动去除边框和圆角样式</p>
               <p>左侧icon和右侧close可依据情况添加或去除，文字会自动适应宽度</p>
             </div>
             <div class="ui-show">
               <div class="j-alert">
-                <div class="j-alert-icon j-alert-icon-success"></div>
-                <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
-                <div class="j-alert-close"></div>
-              </div>
-              <div class="j-alert j-alert-remind">
                 <div class="j-alert-icon j-alert-icon-remind"></div>
                 <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+                <div class="j-alert-close"></div>
+              </div>
+              <div class="j-alert j-alert-success">
+                <div class="j-alert-icon j-alert-icon-success"></div>
+                <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
                 <div class="j-alert-close"></div>
               </div>
               <div class="j-alert j-alert-warn">
@@ -852,13 +852,13 @@
             </div>
             <div class="ui-code">
               <pre><div class="j-alert">
-  <div class="j-alert-icon j-alert-icon-success"></div>
-  <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
-  <div class="j-alert-close"></div>
-</div>
-<div class="j-alert j-alert-remind">
   <div class="j-alert-icon j-alert-icon-remind"></div>
   <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+  <div class="j-alert-close"></div>
+</div>
+<div class="j-alert j-alert-success">
+  <div class="j-alert-icon j-alert-icon-success"></div>
+  <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
   <div class="j-alert-close"></div>
 </div>
 <div class="j-alert j-alert-warn">
@@ -879,11 +879,11 @@
             </div>
             <div class="ui-show">
               <div class="j-alert">
-                <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
-              </div>
-              <div class="j-alert j-alert-remind">
                 <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
                 <div class="j-alert-close"></div>
+              </div>
+              <div class="j-alert j-alert-success">
+                <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
               </div>
               <div class="j-alert j-alert-warn">
                 <div class="j-alert-icon j-alert-icon-warn"></div>
@@ -897,11 +897,11 @@
             </div>
             <div class="ui-code">
               <pre><div class="j-alert">
-  <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
-</div>
-<div class="j-alert j-alert-remind">
   <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
   <div class="j-alert-close"></div>
+</div>
+<div class="j-alert j-alert-success">
+  <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
 </div>
 <div class="j-alert j-alert-warn">
   <div class="j-alert-icon j-alert-icon-warn"></div>
@@ -911,6 +911,116 @@
   <div class="j-alert-icon j-alert-icon-error"></div>
   <div class="j-alert-content">错误：请填写以下必填项</div>
   <div class="j-alert-close"></div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>没有边框的样式，在“.j-alert”层添加“.j-alert-noborder”</p>
+              <p>仅PC端，移动端均不带边框和圆角</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-alert j-alert-noborder">
+                <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+                <div class="j-alert-close"></div>
+              </div>
+              <div class="j-alert j-alert-success j-alert-noborder">
+                <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
+              </div>
+              <div class="j-alert j-alert-warn j-alert-noborder">
+                <div class="j-alert-icon j-alert-icon-warn"></div>
+                <div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+              </div>
+              <div class="j-alert j-alert-error j-alert-noborder">
+                <div class="j-alert-icon j-alert-icon-error"></div>
+                <div class="j-alert-content">错误：请填写以下必填项</div>
+                <div class="j-alert-close"></div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-alert j-alert-noborder">
+  <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+  <div class="j-alert-close"></div>
+</div>
+<div class="j-alert j-alert-success j-alert-noborder">
+  <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
+</div>
+<div class="j-alert j-alert-warn j-alert-noborder">
+  <div class="j-alert-icon j-alert-icon-warn"></div>
+  <div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+</div>
+<div class="j-alert j-alert-error j-alert-noborder">
+  <div class="j-alert-icon j-alert-icon-error"></div>
+  <div class="j-alert-content">错误：请填写以下必填项</div>
+  <div class="j-alert-close"></div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>更醒目的字体颜色</p>
+              <p>在“.j-alert-content”层添加“.j-alert-distinct”</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-alert j-alert-success j-alert-noborder">
+                <div class="j-alert-content j-alert-distinct">成功的通知：欢迎回来，Erin：）</div>
+              </div>
+              <div class="j-alert j-alert-warn j-alert-noborder">
+                <div class="j-alert-icon j-alert-icon-warn"></div>
+                <div class="j-alert-content j-alert-distinct">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+              </div>
+              <div class="j-alert j-alert-error j-alert-noborder">
+                <div class="j-alert-icon j-alert-icon-error"></div>
+                <div class="j-alert-content j-alert-distinct">错误：请填写以下必填项</div>
+                <div class="j-alert-close"></div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-alert j-alert-success j-alert-noborder">
+  <div class="j-alert-content j-alert-distinct">成功的通知：欢迎回来，Erin：）</div>
+</div>
+<div class="j-alert j-alert-warn j-alert-noborder">
+  <div class="j-alert-icon j-alert-icon-warn"></div>
+  <div class="j-alert-content j-alert-distinct">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+</div>
+<div class="j-alert j-alert-error j-alert-noborder">
+  <div class="j-alert-icon j-alert-icon-error"></div>
+  <div class="j-alert-content j-alert-distinct">错误：请填写以下必填项</div>
+  <div class="j-alert-close"></div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>字体居中显示</p>
+              <p>在“.j-alert-content”层添加“.j-alert-center”</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-alert">
+                <div class="j-alert-content j-alert-center">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+              </div>
+              <div class="j-alert j-alert-success">
+                <div class="j-alert-content j-alert-center">成功的通知：欢迎回来，Erin：）</div>
+              </div>
+              <div class="j-alert j-alert-warn j-alert-noborder">
+                <div class="j-alert-content j-alert-center j-alert-distinct">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+              </div>
+              <div class="j-alert j-alert-error j-alert-noborder">
+                <div class="j-alert-content j-alert-center j-alert-distinct">错误：请填写以下必填项</div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-alert">
+  <div class="j-alert-content j-alert-center">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+</div>
+<div class="j-alert j-alert-success">
+  <div class="j-alert-content j-alert-center">成功的通知：欢迎回来，Erin：）</div>
+</div>
+<div class="j-alert j-alert-warn j-alert-noborder">
+  <div class="j-alert-content j-alert-center j-alert-distinct">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+</div>
+<div class="j-alert j-alert-error j-alert-noborder">
+  <div class="j-alert-content j-alert-center j-alert-distinct">错误：请填写以下必填项</div>
 </div></pre>
             </div>
           </div>
@@ -1177,7 +1287,7 @@
     </div>
 
     <script src="public/js/jquery.min.js"></script>
-    <script src="public/js/j-ui.min.js"></script>
+    <script src="assets/js/j-ui.min.js"></script>
     <script src="public/js/index.js"></script>
   </body>
 </html>
