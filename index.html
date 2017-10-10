@@ -37,7 +37,7 @@
             <a href="#tab">分页（tab）</a>
           </li>
           <li>
-            <a href="#form">表格（form）</a>
+            <a href="#form">表单（form）</a>
           </li>
           <li>
             <a href="#alert">警告（alert）</a>
@@ -615,10 +615,10 @@
           </div>
         </div>
         <div class="ui-container" id="form">
-          <div class="ui-title">表格（form）</div>
+          <div class="ui-title">表单（form）</div>
           <div class="ui-group">
             <div class="ui-introduce">
-              <p>表格所以内容都要包含在容器“.j-form”中</p>
+              <p>表单所以内容都要包含在容器“.j-form”中</p>
               <p>包括输入框、文字输入区域、单选、多选、下拉菜单、搜索框</p>
             </div>
             <div class="ui-show">
@@ -747,23 +747,104 @@
             <div class="ui-introduce">
               <p>下拉菜单</p>
             </div>
+            <div class="ui-introduce">
+              <p>下拉菜单在PC和移动端有两种不同的样式（切换浏览器模式查看）</p>
+              <p>下拉框默认最大高度340px，超出部分滚动显示</p>
+            </div>
             <div class="ui-show">
               <div class="j-form">
-                <select class="" name="">
-                  <option value="">选项1</option>
-                  <option value="">选项2</option>
-                  <option value="">选项3</option>
-                </select>
+                <div class="j-form-select">
+                  <select>
+                    <option value="">请选择</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上">下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
               </div>
             </div>
             <div class="ui-code">
               <pre><div class="j-form">
-  <select class="" name="">
-    <option value="">选项1</option>
-    <option value="">选项2</option>
-    <option value="">选项3</option>
-  </select>
+  <div class="j-form-select">
+    <select>
+      <option value="">请选择</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上">下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </div>
 </div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>下拉菜单</p>
+            </div>
+            <div class="ui-introduce">
+              <p>下拉菜单支持分级显示操作，要在需要分级的几个select外添加“.j-form-select-group”，每个”添加“data-level”参数，确定级别，如“data-level="1"”</p>
+              <p>加入表单两级标题“j-form-title”、“j-form-title-s”</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-form">
+                <div class="j-form-select-group">
+                  <div class="j-form-title">请选择与你相符的选项</div>
+                  <div class="j-form-title-s">省/自治区/直辖市</div>
+                  <div class="j-form-select" data-level="1">
+                    <select>
+                      <option value="">请选择</option>
+                      <option value="天津">天津</option>
+                      <option value="上海">上海</option>
+                      <option value="河北">河北</option>
+                      <option value="山东">山东</option>
+                      <option value="辽宁">辽宁</option>
+                      <option value="江苏">江苏</option>
+                    </select>
+                  </div>
+                  <div class="j-form-title-s">市</div>
+                  <div class="j-form-select" data-level="2">
+                    <select>
+                      <option value="">请选择</option>
+                      <option value="a市">a市</option>
+                      <option value="b市">b市</option>
+                      <option value="c市">c市</option>
+                      <option value="d市">d市</option>
+                    </select>
+                  </div>
+                  <div class="j-form-title-s">区</div>
+                  <div class="j-form-select" data-level="3">
+                    <select>
+                      <option value="">请选择</option>
+                      <option value="1区">1区</option>
+                      <option value="2区">2区</option>
+                      <option value="3区">3区</option>
+                      <option value="4区">4区</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre></pre>
             </div>
           </div>
           <div class="ui-group">
