@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/css/j-ui.min.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <title>j-ui</title>
+  </head>
+  <body>
+    <div class="container j-clear">
+      <div class="side-bar">
+        <ul>
+          <li>
+            <a href="#public">公共（public）</a>
+          </li>
+          <div class="ui-menu-title">基础</div>
+          <li>
+            <a href="#icon">图标（icon）</a>
+          </li>
+          <li>
+            <a href="#word">文档（word）</a>
+          </li>
+          <li>
+            <a href="#grid">栅格（grid）</a>
+          </li>
+          <li>
+            <a href="#header">导航（header）</a>
+          </li>
+          <li>
+            <a href="#footer">底部（footer）</a>
+          </li>
+          <li>
+            <a href="#card">卡片（card）</a>
+          </li>
+          <li>
+            <a href="#list">列表（list）</a>
+          </li>
+          <li>
+            <a href="#button">按钮（button）</a>
+          </li>
+          <li>
+            <a href="#tag">标签（tag）</a>
+          </li>
+          <li>
+            <a href="#tab">分页（tab）</a>
+          </li>
+          <li>
+            <a href="#form">表单（form）</a>
+          </li>
+          <div class="ui-menu-title">组件</div>
+          <li>
+            <a href="#alert">警告（alert）</a>
+          </li>
+          <li>
+            <a href="#modal">弹窗（modal）</a>
+          </li>
+          <li>
+            <a href="#accordion">手风琴（accordion）</a>
+          </li>
+          <li>
+            <a href="#feed">feed流（feed）</a>
+          </li>
+          <li>
+            <a href="#recommend">推荐（recommend）</a>
+          </li>
+          <li>
+            <a href="#gallery">画廊（gallery）</a>
+          </li>
+          <li>
+            <a href="#comment">回复（comment）</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <header>简单心理UI组件库</header>
+        <div class="ui-info">简单心理UI组件库（j-ui），样式名称均已“.j-”开头</div>
+        <div class="ui-container" id="public">
+          <div class="ui-title">公共（public）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>公共部分包括一些常用样式，如：</p>
+              <p>.j-cotainer：最外容器</p>
+              <p>.j-title：标题</p>
+              <p>.j-title-b：大标题</p>
+              <p>.j-clear：清除浮动</p>
+              <p>.j-img：图片宽度撑满容器</p>
+              <p>.j-text-ellipsis：文本超出显示“...”</p>
+              <p>.j-left：左浮动</p>
+              <p>.j-right：又浮动</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-title">title</div>
+              <div class="j-title-b">big title</div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-title">title</div>
+<div class="j-title-b">big title</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="grid">
+          <div class="ui-title">栅格（grid）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>栅格包含自适应屏幕，但仅适配PC和Mobile两个端</p>
+              <p>栅格必须包裹在“.j-row”容器内使用，分12列，栅格需加“.j-col”样式</p>
+              <p>PC端样式为：在“.j-col-”后加比例，如：.j-col-1-4，即列宽为容器的四分之一，撑满12列为full，如：.j-col-full，即PC端撑满12列</p>
+              <p>Mobile端样式为：在“.j-col-”后加“m-”再加比例，如：.j-col-m-1-2，即列宽为容器的二分之一，撑满12列同样为full，如：.j-col-m-full</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-row">
+                <div class="j-col j-col-1-4 j-col-m-1-2">1</div>
+                <div class="j-col j-col-1-4 j-col-m-1-2">2</div>
+                <div class="j-col j-col-2-4 j-col-m-full">3</div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-row">
+  <div class="j-col j-col-1-4 j-col-m-1-2">1</div>
+  <div class="j-col j-col-1-4 j-col-m-1-2">2</div>
+  <div class="j-col j-col-2-4 j-col-m-full">3</div>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="header">
+          <div class="ui-title">导航（header）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>PC端：</p>
+              <p>默认不吸顶，如需吸顶请在.j-nav后添加.j-nav-fixed样式</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-nav mobile-none">
+                <div class="j-nav-container">
+                  <div class="j-nav-logo">
+                    <a href="#">
+                      <img src="public/images/logo.png">
+                    </a>
+                  </div>
+                  <div class="j-nav-bar">
+                    <div class="j-nav-menu">
+                      <a href="#">menu1</a>
+                      <div class="j-nav-dropdown-box">
+                        <div class="j-nav-dropdown">
+                          <a href="#" class="j-nav-dropdown-item">dropdown</a>
+                          <a href="#" class="j-nav-dropdown-item">dropdown</a>
+                          <a href="#" class="j-nav-dropdown-item">dropdown</a>
+                          <a href="#" class="j-nav-dropdown-item">dropdown</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="j-nav-menu">
+                      <a href="#">menu2</a>
+                    </div>
+                    <div class="j-nav-icon">
+                      <a href="#">icon</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-tips desktop-none">请在PC端查看</div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-nav">
+  <div class="j-nav-container">
+    <div class="j-nav-logo">
+      <a href="#">
+        <img src="public/images/logo.png">
+      </a>
+    </div>
+    <div class="j-nav-bar">
+      <div class="j-nav-menu">
+        <a href="#">menu1</a>
+        <div class="j-nav-dropdown-box">
+          <div class="j-nav-dropdown">
+            <a href="#" class="j-nav-dropdown-item">dropdown</a>
+            <a href="#" class="j-nav-dropdown-item">dropdown</a>
+            <a href="#" class="j-nav-dropdown-item">dropdown</a>
+            <a href="#" class="j-nav-dropdown-item">dropdown</a>
+          </div>
+        </div>
+      </div>
+      <div class="j-nav-menu">
+        <a href="#">menu2</a>
+      </div>
+      <div class="j-nav-icon">
+        <a href="#">icon</a>
+      </div>
+    </div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>Mobile端：</p>
+              <p>默认不吸顶，如需吸顶请在.j-nav后添加.j-nav-fixed样式</p>
+              <p>可设置居左的logo</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-nav desktop-none">
+                <div class="j-nav-container">
+                  <div class="j-nav-logo-left">
+                    <a href="#">
+                      <img src="public/images/logo.png">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-tips mobile-none">请在Mobile端查看</div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-nav">
+  <div class="j-nav-container">
+    <div class="j-nav-logo-left">
+      <a href="#">
+        <img src="public/images/logo.png">
+      </a>
+    </div>
+    <div class="j-nav-title">简单心理</div>
+  </div>
+</div></pre>
+            </div>
+            <div class="ui-introduce">
+              <p>可设置居中的logo</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-nav desktop-none">
+                <div class="j-nav-container">
+                  <div class="j-nav-logo">
+                    <img src="public/images/logo.png">
+                  </div>
+                </div>
+              </div>
+              <div class="ui-tips mobile-none">请在Mobile端查看</div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-nav">
+  <div class="j-nav-container">
+    <div class="j-nav-logo">
+      <img src="public/images/logo.png">
+    </div>
+  </div>
+</div></pre>
+            </div>
+            <div class="ui-introduce">
+              <p>可设置居中的title</p>
+              <p>也可同时添加左右两侧的图标</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-nav desktop-none">
+                <div class="j-nav-container">
+                  <div class="j-nav-icon-left">
+                    <a href="#">
+                      <img src="public/images/search.png">
+                    </a>
+                  </div>
+                  <div class="j-nav-title">简单心理</div>
+                  <div class="j-nav-icon-right">
+                    <a href="#">
+                      <img src="public/images/search.png">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-tips mobile-none">请在Mobile端查看</div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-nav">
+  <div class="j-nav-container">
+    <div class="j-nav-icon-left">
+      <a href="#">
+        <img src="public/images/search.png">
+      </a>
+    </div>
+    <div class="j-nav-title">简单心理</div>
+    <div class="j-nav-icon-right">
+      <a href="#">
+        <img src="public/images/search.png">
+      </a>
+    </div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="footer">
+          <div class="ui-title">底部（footer）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>PC端：</p>
+              <p>默认不悬浮，如需悬浮底部请在“.j-footer”层加“.j-footer-fixed”</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-footer mobile-none">
+                <div class="j-footer-container">
+                  <div class="j-footer-content">test</div>
+                </div>
+                <div class="j-footer-copyright">
+                  <div class="j-footer-container">copyright</div>
+                </div>
+              </div>
+              <div class="ui-tips desktop-none">请在PC端查看</div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-footer">
+  <div class="j-footer-container">
+    <div class="j-footer-content">test</div>
+  </div>
+  <div class="j-footer-copyright">
+    <div class="j-footer-container">copyright</div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>Mobile端：</p>
+              <p>底部交互</p>
+              <p>默认不悬浮，如需悬浮底部请在“.j-footer”层加“.j-footer-fixed”</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-footer j-footer-menu desktop-none">
+                <div class="j-footer-menu-icon-left">
+                  <a href="#">
+                    <img src="public/images/search.png">
+                  </a>
+                  <a href="#">
+                    <img src="public/images/search.png">
+                  </a>
+                </div>
+                <div class="j-footer-menu-btn">
+                  <a href="#">btn</a>
+                </div>
+                <div class="j-footer-menu-icon-right">
+                  <a href="#">
+                    <img src="public/images/search.png">
+                  </a>
+                </div>
+              </div>
+              <div class="ui-tips mobile-none">请在Mobile端查看</div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-footer j-footer-menu">
+  <div class="j-footer-menu-icon-left">
+    <a href="#">
+      <img src="public/images/search.png">
+    </a>
+    <a href="#">
+      <img src="public/images/search.png">
+    </a>
+  </div>
+  <div class="j-footer-menu-btn">
+    <a href="#">btn</a>
+  </div>
+  <div class="j-footer-menu-icon-right">
+    <a href="#">
+      <img src="public/images/search.png">
+    </a>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>底部按钮</p>
+              <p>默认不悬浮，如需悬浮底部请在“.j-footer”层加“.j-footer-fixed”</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-footer j-footer-btn desktop-none">
+                <a href="#">btn</a>
+              </div>
+              <div class="ui-tips mobile-none">请在Mobile端查看</div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-footer j-footer-btn">
+  <a href="#">btn</a>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="card">
+          <div class="ui-title">卡片（card）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>卡片自适应PC端和Mobile端，PC端间隔为横线，Mobile端间隔为灰色横条，默认左右内边距均为16px</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-card">
+                <div class="j-card-item">
+                  <div class="j-card-content">
+                    <p>卡片1内容</p>
+                  </div>
+                </div>
+                <div class="j-card-item">
+                  <div class="j-card-content">
+                    <p>卡片2内容</p>
+                  </div>
+                </div>
+                <div class="j-card-item">
+                  <div class="j-card-content">
+                    <p>卡片3内容</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-card">
+  <div class="j-card-item">
+    <div class="j-card-content">
+      <p>卡片1内容</p>
+    </div>
+  </div>
+  <div class="j-card-item">
+    <div class="j-card-content">
+      <p>卡片2内容</p>
+    </div>
+  </div>
+  <div class="j-card-item">
+    <div class="j-card-content">
+      <p>卡片3内容</p>
+    </div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>Mobile端卡片也可以是横线分隔，需要添加“.j-card-border”。（请将浏览器切换到移动端查看）</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-card">
+                <div class="j-card-item j-card-border">
+                  <div class="j-card-content">
+                    <p>卡片1内容</p>
+                  </div>
+                </div>
+                <div class="j-card-item j-card-border">
+                  <div class="j-card-content">
+                    <p>卡片2内容</p>
+                  </div>
+                </div>
+                <div class="j-card-item j-card-border">
+                  <div class="j-card-content">
+                    <p>卡片3内容</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-card">
+  <div class="j-card-item j-card-border">
+    <div class="j-card-content">
+      <p>卡片1内容</p>
+    </div>
+  </div>
+  <div class="j-card-item j-card-border">
+    <div class="j-card-content">
+      <p>卡片2内容</p>
+    </div>
+  </div>
+  <div class="j-card-item j-card-border">
+    <div class="j-card-content">
+      <p>卡片3内容</p>
+    </div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="list">
+          <div class="ui-title">列表（list）</div>
+          <div class="ui-introduce">
+            <p>整个列表一定要包裹在“.j-list”内</p>
+            <p>每个组包裹在“.j-list-group”中，中间有灰色空格</p>
+            <p>标题为“.j-list-title”；图标为“.j-list-icon”，可没有图标；副标题为“.j-list-sub”；数字气泡为“.j-list-bubble”，均可用“.j-left”和“.j-right”控制居左或居右</p>
+            <p>注：list组件固定高度60px，需要自适应高度的列表可用card组件</p>
+          </div>
+          <div class="ui-show">
+            <div class="j-list">
+              <div class="j-list-group">
+                <a class="j-list-item" href="#">
+                  <span class="j-list-title j-left">简单心理1</span>
+                  <span class="j-list-sub j-left">待支付</span>
+                  <span class="j-list-icon j-right">
+                    <img src="public/images/me_1_1@2x.png">
+                  </span>
+                </a>
+                <a class="j-list-item" href="#">
+                  <span class="j-list-title j-left">简单心理2</span>
+                  <span class="j-list-bubble j-left">12</span>
+                  <span class="j-list-icon j-right">
+                    <img src="public/images/me_1_2@2x.png">
+                  </span>
+                </a>
+                <a class="j-list-item" href="#">
+                  <span class="j-list-title j-left">简单心理3</span>
+                  <span class="j-list-icon j-right">
+                    <img src="public/images/me_2_1@2x.png">
+                  </span>
+                </a>
+              </div>
+              <div class="j-list-group">
+                <a class="j-list-item" href="#">
+                  <span class="j-list-title j-left">简单心理4</span>
+                  <span class="j-list-sub j-left">500.00元</span>
+                  <span class="j-list-icon j-right">
+                    <img src="public/images/me_1_1@2x.png">
+                  </span>
+                </a>
+              </div>
+              <div class="j-list-group">
+                <a class="j-list-item" href="#">
+                  <span class="j-list-title j-left">简单心理5</span>
+                  <span class="j-list-icon j-right">
+                    <img src="public/images/arrow@2x.png">
+                  </span>
+                </a>
+                <a class="j-list-item" href="#">
+                  <span class="j-list-title j-left">简单心理6</span>
+                  <span class="j-list-icon j-right">
+                    <img src="public/images/arrow@2x.png">
+                  </span>
+                </a>
+                <a class="j-list-item" href="#">
+                  <span class="j-list-title j-left">简单心理7</span>
+                  <span class="j-list-icon j-right">
+                    <img src="public/images/arrow@2x.png">
+                  </span>
+                </a>
+                <a class="j-list-item" href="#">
+                  <span class="j-list-title j-left">简单心理8</span>
+                  <span class="j-list-icon j-right">
+                    <img src="public/images/arrow@2x.png">
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="ui-code">
+            <pre><div class="j-list">
+  <div class="j-list-group">
+    <a class="j-list-item" href="#">
+      <span class="j-list-title j-left">简单心理1</span>
+      <span class="j-list-sub j-left">待支付</span>
+      <span class="j-list-icon j-right">
+        <img src="public/images/me_1_1@2x.png">
+      </span>
+    </a>
+    <a class="j-list-item" href="#">
+      <span class="j-list-title j-left">简单心理2</span>
+      <span class="j-list-bubble j-left">12</span>
+      <span class="j-list-icon j-right">
+        <img src="public/images/me_1_2@2x.png">
+      </span>
+    </a>
+    <a class="j-list-item" href="#">
+      <span class="j-list-title j-left">简单心理3</span>
+      <span class="j-list-icon j-right">
+        <img src="public/images/me_2_1@2x.png">
+      </span>
+    </a>
+  </div>
+  <div class="j-list-group">
+    <a class="j-list-item" href="#">
+      <span class="j-list-title j-left">简单心理4</span>
+      <span class="j-list-sub j-left">500.00元</span>
+      <span class="j-list-icon j-right">
+        <img src="public/images/me_1_1@2x.png">
+      </span>
+    </a>
+  </div>
+  <div class="j-list-group">
+    <a class="j-list-item" href="#">
+      <span class="j-list-title j-left">简单心理5</span>
+      <span class="j-list-icon j-right">
+        <img src="public/images/arrow@2x.png">
+      </span>
+    </a>
+    <a class="j-list-item" href="#">
+      <span class="j-list-title j-left">简单心理6</span>
+      <span class="j-list-icon j-right">
+        <img src="public/images/arrow@2x.png">
+      </span>
+    </a>
+    <a class="j-list-item" href="#">
+      <span class="j-list-title j-left">简单心理7</span>
+      <span class="j-list-icon j-right">
+        <img src="public/images/arrow@2x.png">
+      </span>
+    </a>
+    <a class="j-list-item" href="#">
+      <span class="j-list-title j-left">简单心理8</span>
+      <span class="j-list-icon j-right">
+        <img src="public/images/arrow@2x.png">
+      </span>
+    </a>
+  </div>
+</div></pre>
+          </div>
+        </div>
+        <div class="ui-container" id="button">
+          <div class="ui-title">按钮（button）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>按钮分为普通、边框、次要、危险、透明、禁用几种不同样式，每种样式均包括大、中、小三种</p>
+              <p>默认左浮动，请给外层容器使用“.j-clear”清除浮动</p>
+            </div>
+            <div class="ui-show">
+              <div class="btn-box j-clear">
+                <div class="j-btn j-btn-s">btn</div>
+                <div class="j-btn">btn</div>
+                <div class="j-btn j-btn-l">btn</div>
+              </div>
+              <div class="btn-box j-clear">
+                <div class="j-btn j-btn-border j-btn-s">btn</div>
+                <div class="j-btn j-btn-border">btn</div>
+                <div class="j-btn j-btn-border j-btn-l">btn</div>
+              </div>
+              <div class="btn-box j-clear">
+                <div class="j-btn j-btn-secondary j-btn-s">btn</div>
+                <div class="j-btn j-btn-secondary">btn</div>
+                <div class="j-btn j-btn-secondary j-btn-l">btn</div>
+              </div>
+              <div class="btn-box j-clear">
+                <div class="j-btn j-btn-danger j-btn-s">btn</div>
+                <div class="j-btn j-btn-danger">btn</div>
+                <div class="j-btn j-btn-danger j-btn-l">btn</div>
+              </div>
+              <div class="btn-box j-clear">
+                <div class="j-btn j-btn-inverse j-btn-s">btn</div>
+                <div class="j-btn j-btn-inverse">btn</div>
+                <div class="j-btn j-btn-inverse j-btn-l">btn</div>
+              </div>
+              <div class="btn-box j-clear">
+                <div class="j-btn j-btn-disable j-btn-s">btn</div>
+                <div class="j-btn j-btn-disable">btn</div>
+                <div class="j-btn j-btn-disable j-btn-l">btn</div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="btn-box j-clear">
+  <div class="j-btn j-btn-s">btn</div>
+  <div class="j-btn">btn</div>
+  <div class="j-btn j-btn-l">btn</div>
+</div>
+<div class="btn-box j-clear">
+  <div class="j-btn j-btn-border j-btn-s">btn</div>
+  <div class="j-btn j-btn-border">btn</div>
+  <div class="j-btn j-btn-border j-btn-l">btn</div>
+</div>
+<div class="btn-box j-clear">
+  <div class="j-btn j-btn-secondary j-btn-s">btn</div>
+  <div class="j-btn j-btn-secondary">btn</div>
+  <div class="j-btn j-btn-secondary j-btn-l">btn</div>
+</div>
+<div class="btn-box j-clear">
+  <div class="j-btn j-btn-danger j-btn-s">btn</div>
+  <div class="j-btn j-btn-danger">btn</div>
+  <div class="j-btn j-btn-danger j-btn-l">btn</div>
+</div>
+<div class="btn-box j-clear">
+  <div class="j-btn j-btn-inverse j-btn-s">btn</div>
+  <div class="j-btn j-btn-inverse">btn</div>
+  <div class="j-btn j-btn-inverse j-btn-l">btn</div>
+</div>
+<div class="btn-box j-clear">
+  <div class="j-btn j-btn-disable j-btn-s">btn</div>
+  <div class="j-btn j-btn-disable">btn</div>
+  <div class="j-btn j-btn-disable j-btn-l">btn</div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>带链接的按钮</p>
+            </div>
+            <div class="ui-show">
+              <div class="btn-box j-clear">
+                <a class="j-btn" href="#">link</a>
+                <a class="j-btn j-btn-border" href="#">link</a>
+                <a class="j-btn j-btn-secondary" href="#">link</a>
+                <a class="j-btn j-btn-danger" href="#">link</a>
+                <a class="j-btn j-btn-inverse" href="#">link</a>
+                <a class="j-btn j-btn-disable" href="#">link</a>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="btn-box j-clear">
+  <a class="j-btn" href="#">link</a>
+  <a class="j-btn j-btn-border" href="#">link</a>
+  <a class="j-btn j-btn-secondary" href="#">link</a>
+  <a class="j-btn j-btn-danger" href="#">link</a>
+  <a class="j-btn j-btn-inverse" href="#">link</a>
+  <a class="j-btn j-btn-disable" href="#">link</a>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="tag">
+          <div class="ui-title">标签（tag）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>标签包括普通、边框两种样式</p>
+              <p>默认左浮动，请给外层容器使用“.j-clear”清除浮动</p>
+            </div>
+            <div class="ui-show">
+              <div class="tag-box j-clear">
+                <div class="j-tag">tag1</div>
+                <div class="j-tag">tag2</div>
+                <div class="j-tag">tag3</div>
+              </div>
+              <div class="tag-box j-clear">
+                <div class="j-tag j-tag-border">tag1</div>
+                <div class="j-tag j-tag-border">tag2</div>
+                <div class="j-tag j-tag-border">tag3</div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="tag-box j-clear">
+  <div class="j-tag">tag1</div>
+  <div class="j-tag">tag2</div>
+  <div class="j-tag">tag3</div>
+</div>
+<div class="tag-box j-clear">
+  <div class="j-tag j-tag-border">tag1</div>
+  <div class="j-tag j-tag-border">tag2</div>
+  <div class="j-tag j-tag-border">tag3</div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>带链接的标签</p>
+            </div>
+            <div class="ui-show">
+              <div class="tag-box j-clear">
+                <a class="j-tag" href="#">link</a>
+                <a class="j-tag j-tag-border" href="#">link</a>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="tag-box j-clear">
+  <a class="j-tag" href="#">link</a>
+  <a class="j-tag j-tag-border" href="#">link</a>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="tab">
+          <div class="ui-title">分页（tab）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>分页自适应PC端和Mobile端，PC端居左对其，Mobile端品均分布</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-tab">
+                <div class="j-tab-item active">
+                  <a href="#">tab1</a>
+                </div>
+                <div class="j-tab-item">
+                  <a href="#">tab2</a>
+                </div>
+                <div class="j-tab-item">
+                  <a href="#">tab3</a>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-tab">
+  <div class="j-tab-item active">
+    <a href="#">tab1</a>
+  </div>
+  <div class="j-tab-item">
+    <a href="#">tab2</a>
+  </div>
+  <div class="j-tab-item">
+    <a href="#">tab3</a>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>.j-tab-item里也可以不是链接</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-tab">
+                <div class="j-tab-item active">
+                  <div class="j-tab-link">tab1</div>
+                </div>
+                <div class="j-tab-item">
+                  <div class="j-tab-link">tab2</div>
+                </div>
+                <div class="j-tab-item">
+                  <div class="j-tab-link">tab3</div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-tab">
+  <div class="j-tab-item active">
+    <div class="j-tab-link">tab1</div>
+  </div>
+  <div class="j-tab-item">
+    <div class="j-tab-link">tab2</div>
+  </div>
+  <div class="j-tab-item">
+    <div class="j-tab-link">tab3</div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="form">
+          <div class="ui-title">表单（form）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>表单所以内容都要包含在容器“.j-form”中</p>
+              <p>包括输入框、文字输入区域、单选、多选、下拉菜单、搜索框</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-form">
+                <input type="text" placeholder="请输入...">
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-form">
+  <input type="text" placeholder="请输入...">
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>输入框左右两侧添加按钮</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-form">
+                <div class="j-input-group">
+                  <div class="j-input-group-addon j-input-group-control">left</div>
+                  <input class="j-input-group-control" type="text" placeholder="请输入...">
+                  <div class="j-input-group-addon j-input-group-control">right</div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-form">
+  <div class="j-input-group">
+    <div class="j-input-group-addon j-input-group-control">left</div>
+    <input class="j-input-group-control" type="text" placeholder="请输入...">
+    <div class="j-input-group-addon j-input-group-control">right</div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>文字输入区域</p>
+              <p>单选框、多选框默认左浮动，请给外层容器使用“.j-clear”清除浮动</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-form">
+                <textarea placeholder="请输入..."></textarea>
+                <div class="form-box j-clear">
+                  <div class="j-form-radio">
+                    <input type="radio" id="input1" name="test" checked="checked">
+                    <label for="input1">radio1</label>
+                  </div>
+                  <div class="j-form-radio">
+                    <input type="radio" id="input2" name="test">
+                    <label for="input2">radio2</label>
+                  </div>
+                  <div class="j-form-radio">
+                    <input type="radio" id="input3" name="test">
+                    <label for="input3">radio3</label>
+                  </div>
+                  <div class="j-form-radio">
+                    <input type="radio" id="input4" name="test">
+                    <label for="input4">radio4</label>
+                  </div>
+                </div>
+                <div class="form-box j-clear">
+                  <div class="j-form-checkbox">
+                    <input type="checkbox" id="checkbox1" checked="checked">
+                    <label for="checkbox1">checkbox1</label>
+                  </div>
+                  <div class="j-form-checkbox">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">checkbox2</label>
+                  </div>
+                  <div class="j-form-checkbox">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3">checkbox3</label>
+                  </div>
+                  <div class="j-form-checkbox">
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4">checkbox4</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-form">
+  <textarea placeholder="请输入..."></textarea>
+  <div class="form-box j-clear">
+    <div class="j-form-radio">
+      <input type="radio" id="input1" name="test" checked="checked">
+      <label for="input1">radio1</label>
+    </div>
+    <div class="j-form-radio">
+      <input type="radio" id="input2" name="test">
+      <label for="input2">radio2</label>
+    </div>
+    <div class="j-form-radio">
+      <input type="radio" id="input3" name="test">
+      <label for="input3">radio3</label>
+    </div>
+    <div class="j-form-radio">
+      <input type="radio" id="input4" name="test">
+      <label for="input4">radio4</label>
+    </div>
+  </div>
+  <div class="form-box j-clear">
+    <div class="j-form-checkbox">
+      <input type="checkbox" id="checkbox1" checked="checked">
+      <label for="checkbox1">checkbox1</label>
+    </div>
+    <div class="j-form-checkbox">
+      <input type="checkbox" id="checkbox2">
+      <label for="checkbox2">checkbox2</label>
+    </div>
+    <div class="j-form-checkbox">
+      <input type="checkbox" id="checkbox3">
+      <label for="checkbox3">checkbox3</label>
+    </div>
+    <div class="j-form-checkbox">
+      <input type="checkbox" id="checkbox4">
+      <label for="checkbox4">checkbox4</label>
+    </div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>下拉菜单</p>
+            </div>
+            <div class="ui-introduce">
+              <p>下拉菜单在PC和移动端有两种不同的样式（切换浏览器模式查看）</p>
+              <p>下拉框默认最大高度340px，超出部分滚动显示</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-form">
+                <div class="j-form-select">
+                  <select>
+                    <option value="">请选择</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上">下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-form">
+  <div class="j-form-select">
+    <select>
+      <option value="">请选择</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上">下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>下拉菜单</p>
+            </div>
+            <div class="ui-introduce">
+              <p>下拉菜单支持分级显示操作，要在需要分级的几个select外添加“.j-form-select-group”，每个”添加“data-level”参数，确定级别，如“data-level="1"”</p>
+              <p>加入表单两级标题“j-form-title”、“j-form-title-s”</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-form">
+                <div class="j-form-select-group">
+                  <div class="j-form-title">请选择与你相符的选项</div>
+                  <div class="j-form-title-s">省/自治区/直辖市</div>
+                  <div class="j-form-select" data-level="1">
+                    <select>
+                      <option value="">请选择</option>
+                      <option value="天津">天津</option>
+                      <option value="上海">上海</option>
+                      <option value="河北">河北</option>
+                      <option value="山东">山东</option>
+                      <option value="辽宁">辽宁</option>
+                      <option value="江苏">江苏</option>
+                    </select>
+                  </div>
+                  <div class="j-form-title-s">市</div>
+                  <div class="j-form-select" data-level="2">
+                    <select>
+                      <option value="">请选择</option>
+                      <option value="a市">a市</option>
+                      <option value="b市">b市</option>
+                      <option value="c市">c市</option>
+                      <option value="d市">d市</option>
+                    </select>
+                  </div>
+                  <div class="j-form-title-s">区</div>
+                  <div class="j-form-select" data-level="3">
+                    <select>
+                      <option value="">请选择</option>
+                      <option value="1区">1区</option>
+                      <option value="2区">2区</option>
+                      <option value="3区">3区</option>
+                      <option value="4区">4区</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-form">
+  <div class="j-form-select-group">
+    <div class="j-form-title">请选择与你相符的选项</div>
+    <div class="j-form-title-s">省/自治区/直辖市</div>
+    <div class="j-form-select" data-level="1">
+      <select>
+        <option value="">请选择</option>
+        <option value="天津">天津</option>
+        <option value="上海">上海</option>
+        <option value="河北">河北</option>
+        <option value="山东">山东</option>
+        <option value="辽宁">辽宁</option>
+        <option value="江苏">江苏</option>
+      </select>
+    </div>
+    <div class="j-form-title-s">市</div>
+    <div class="j-form-select" data-level="2">
+      <select>
+        <option value="">请选择</option>
+        <option value="a市">a市</option>
+        <option value="b市">b市</option>
+        <option value="c市">c市</option>
+        <option value="d市">d市</option>
+      </select>
+    </div>
+    <div class="j-form-title-s">区</div>
+    <div class="j-form-select" data-level="3">
+      <select>
+        <option value="">请选择</option>
+        <option value="1区">1区</option>
+        <option value="2区">2区</option>
+        <option value="3区">3区</option>
+        <option value="4区">4区</option>
+      </select>
+    </div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>日期输入框、文件上传</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-form">
+                <input type="date">
+                <input type="file">
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-form">
+  <input type="date">
+  <input type="file">
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>滑动条</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-form">
+                <input type="range">
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-form">
+  <input type="range">
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>搜索栏</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-form">
+                <div class="j-search-bar">
+                  <input type="text">
+                  <div class="j-search-bar-btn">搜索</div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-form">
+  <div class="j-search-bar">
+    <input type="text">
+    <div class="j-search-bar-btn">搜索</div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="alert">
+          <div class="ui-title">警告（alert）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>警告分为成功、提示、警告、错误四种样式，自动适应PC端和Mobile端</p>
+              <p>默认不吸顶，如需吸顶请在“.j-alert”层添加“.j-alert-fixed”样式，吸顶会自动去除边框和圆角样式</p>
+              <p>左侧icon和右侧close可依据情况添加或去除，文字会自动适应宽度</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-alert">
+                <div class="j-alert-icon j-alert-icon-remind"></div>
+                <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+                <div class="j-alert-close"></div>
+              </div>
+              <div class="j-alert j-alert-success">
+                <div class="j-alert-icon j-alert-icon-success"></div>
+                <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
+                <div class="j-alert-close"></div>
+              </div>
+              <div class="j-alert j-alert-warn">
+                <div class="j-alert-icon j-alert-icon-warn"></div>
+                <div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+                <div class="j-alert-close"></div>
+              </div>
+              <div class="j-alert j-alert-error">
+                <div class="j-alert-icon j-alert-icon-error"></div>
+                <div class="j-alert-content">错误：请填写以下必填项</div>
+                <div class="j-alert-close"></div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-alert">
+  <div class="j-alert-icon j-alert-icon-remind"></div>
+  <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+  <div class="j-alert-close"></div>
+</div>
+<div class="j-alert j-alert-success">
+  <div class="j-alert-icon j-alert-icon-success"></div>
+  <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
+  <div class="j-alert-close"></div>
+</div>
+<div class="j-alert j-alert-warn">
+  <div class="j-alert-icon j-alert-icon-warn"></div>
+  <div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+  <div class="j-alert-close"></div>
+</div>
+<div class="j-alert j-alert-error">
+  <div class="j-alert-icon j-alert-icon-error"></div>
+  <div class="j-alert-content">错误：请填写以下必填项</div>
+  <div class="j-alert-close"></div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>.j-alert-icon和.j-alert-close可自行选择是否添加</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-alert">
+                <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+                <div class="j-alert-close"></div>
+              </div>
+              <div class="j-alert j-alert-success">
+                <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
+              </div>
+              <div class="j-alert j-alert-warn">
+                <div class="j-alert-icon j-alert-icon-warn"></div>
+                <div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+              </div>
+              <div class="j-alert j-alert-error">
+                <div class="j-alert-icon j-alert-icon-error"></div>
+                <div class="j-alert-content">错误：请填写以下必填项</div>
+                <div class="j-alert-close"></div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-alert">
+  <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+  <div class="j-alert-close"></div>
+</div>
+<div class="j-alert j-alert-success">
+  <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
+</div>
+<div class="j-alert j-alert-warn">
+  <div class="j-alert-icon j-alert-icon-warn"></div>
+  <div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+</div>
+<div class="j-alert j-alert-error">
+  <div class="j-alert-icon j-alert-icon-error"></div>
+  <div class="j-alert-content">错误：请填写以下必填项</div>
+  <div class="j-alert-close"></div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>没有边框的样式，在“.j-alert”层添加“.j-alert-noborder”</p>
+              <p>仅PC端，移动端均不带边框和圆角</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-alert j-alert-noborder">
+                <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+                <div class="j-alert-close"></div>
+              </div>
+              <div class="j-alert j-alert-success j-alert-noborder">
+                <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
+              </div>
+              <div class="j-alert j-alert-warn j-alert-noborder">
+                <div class="j-alert-icon j-alert-icon-warn"></div>
+                <div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+              </div>
+              <div class="j-alert j-alert-error j-alert-noborder">
+                <div class="j-alert-icon j-alert-icon-error"></div>
+                <div class="j-alert-content">错误：请填写以下必填项</div>
+                <div class="j-alert-close"></div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-alert j-alert-noborder">
+  <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+  <div class="j-alert-close"></div>
+</div>
+<div class="j-alert j-alert-success j-alert-noborder">
+  <div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div>
+</div>
+<div class="j-alert j-alert-warn j-alert-noborder">
+  <div class="j-alert-icon j-alert-icon-warn"></div>
+  <div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+</div>
+<div class="j-alert j-alert-error j-alert-noborder">
+  <div class="j-alert-icon j-alert-icon-error"></div>
+  <div class="j-alert-content">错误：请填写以下必填项</div>
+  <div class="j-alert-close"></div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>更醒目的字体颜色</p>
+              <p>在“.j-alert-content”层添加“.j-alert-distinct”</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-alert j-alert-success j-alert-noborder">
+                <div class="j-alert-content j-alert-distinct">成功的通知：欢迎回来，Erin：）</div>
+              </div>
+              <div class="j-alert j-alert-warn j-alert-noborder">
+                <div class="j-alert-icon j-alert-icon-warn"></div>
+                <div class="j-alert-content j-alert-distinct">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+              </div>
+              <div class="j-alert j-alert-error j-alert-noborder">
+                <div class="j-alert-icon j-alert-icon-error"></div>
+                <div class="j-alert-content j-alert-distinct">错误：请填写以下必填项</div>
+                <div class="j-alert-close"></div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-alert j-alert-success j-alert-noborder">
+  <div class="j-alert-content j-alert-distinct">成功的通知：欢迎回来，Erin：）</div>
+</div>
+<div class="j-alert j-alert-warn j-alert-noborder">
+  <div class="j-alert-icon j-alert-icon-warn"></div>
+  <div class="j-alert-content j-alert-distinct">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+</div>
+<div class="j-alert j-alert-error j-alert-noborder">
+  <div class="j-alert-icon j-alert-icon-error"></div>
+  <div class="j-alert-content j-alert-distinct">错误：请填写以下必填项</div>
+  <div class="j-alert-close"></div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>字体居中显示</p>
+              <p>在“.j-alert-content”层添加“.j-alert-center”</p>
+            </div>
+            <div class="ui-show">
+              <div class="j-alert">
+                <div class="j-alert-content j-alert-center">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+              </div>
+              <div class="j-alert j-alert-success">
+                <div class="j-alert-content j-alert-center">成功的通知：欢迎回来，Erin：）</div>
+              </div>
+              <div class="j-alert j-alert-warn j-alert-noborder">
+                <div class="j-alert-content j-alert-center j-alert-distinct">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+              </div>
+              <div class="j-alert j-alert-error j-alert-noborder">
+                <div class="j-alert-content j-alert-center j-alert-distinct">错误：请填写以下必填项</div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-alert">
+  <div class="j-alert-content j-alert-center">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
+</div>
+<div class="j-alert j-alert-success">
+  <div class="j-alert-content j-alert-center">成功的通知：欢迎回来，Erin：）</div>
+</div>
+<div class="j-alert j-alert-warn j-alert-noborder">
+  <div class="j-alert-content j-alert-center j-alert-distinct">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div>
+</div>
+<div class="j-alert j-alert-error j-alert-noborder">
+  <div class="j-alert-content j-alert-center j-alert-distinct">错误：请填写以下必填项</div>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="modal">
+          <div class="ui-title">弹窗（modal）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>固定宽度弹窗</p>
+            </div>
+            <div class="ui-show j-clear">
+              <div class="j-btn" data-model="modal1">modal1</div>
+              <div class="j-btn" data-model="modal2">modal2</div>
+              <div class="j-btn" data-model="modal3">modal3</div>
+              <div class="j-modal" id="modal1">
+                <div class="j-modal-container">
+                  <div class="j-modal-header">
+                    <div class="j-modal-close" data-close></div>
+                  </div>
+                  <div class="j-modal-content">请填写相关内容！</div>
+                </div>
+              </div>
+              <div class="j-modal" id="modal2">
+                <div class="j-modal-container">
+                  <div class="j-modal-header">放弃预约</div>
+                  <div class="j-modal-content">确定放弃预约？</div>
+                  <div class="j-modal-footer">
+                    <div class="j-btn j-btn-border j-btn-s" data-close>取消</div>
+                    <div class="j-btn j-btn-s">确定</div>
+                  </div>
+                </div>
+              </div>
+              <div class="j-modal" id="modal3">
+                <div class="j-modal-container">
+                  <div class="j-modal-content">
+                    在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。
+                  </div>
+                  <div class="j-modal-footer">
+                    <div class="j-btn j-btn-border j-btn-s" data-close>取消</div>
+                    <div class="j-btn j-btn-s">确定</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-introduce">
+              <p>modal1</p>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-btn" data-model="modal1">modal1</div>
+<div class="j-modal" id="modal1">
+  <div class="j-modal-container">
+    <div class="j-modal-header">
+      <div class="j-modal-close" data-close></div>
+    </div>
+    <div class="j-modal-content">请填写相关内容！</div>
+  </div>
+</div></pre>
+            </div>
+            <div class="ui-introduce">
+              <p>modal2</p>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-btn" data-model="modal2">modal2</div>
+<div class="j-modal" id="modal2">
+  <div class="j-modal-container">
+    <div class="j-modal-header">放弃预约</div>
+    <div class="j-modal-content">确定放弃预约？</div>
+    <div class="j-modal-footer">
+      <div class="j-btn j-btn-border j-btn-s" data-close>取消</div>
+      <div class="j-btn j-btn-s">确定</div>
+    </div>
+  </div>
+</div></pre>
+            </div>
+            <div class="ui-introduce">
+              <p>modal3</p>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-btn" data-model="modal3">modal3</div>
+<div class="j-modal" id="modal3">
+  <div class="j-modal-container">
+    <div class="j-modal-content">
+      在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。
+    </div>
+    <div class="j-modal-footer">
+      <div class="j-btn j-btn-border j-btn-s" data-close>取消</div>
+      <div class="j-btn j-btn-s">确定</div>
+    </div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p>全屏弹窗</p>
+            </div>
+            <div class="ui-show j-clear">
+              <div class="j-btn" data-model="modal4">modal</div>
+              <div class="j-modal j-modal-full" id="modal4">
+                <div class="j-modal-container">
+                  <div class="j-modal-header">
+                    <div class="j-modal-close" data-close></div>
+                  </div>
+                  <div class="j-modal-content">在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。</div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-btn" data-model="modal4">modal</div>
+<div class="j-modal j-modal-full" id="modal4">
+  <div class="j-modal-container">
+    <div class="j-modal-header">
+      <div class="j-modal-close" data-close></div>
+    </div>
+    <div class="j-modal-content">在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。</div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+        </div>
+        <div class="ui-container" id="accordion">
+          <div class="ui-title">手风琴（accordion）</div>
+          <div class="ui-group">
+            <div class="ui-introduce">
+              <p></p>
+            </div>
+            <div class="ui-show">
+              <div class="j-accordion">
+                <div class="j-accordion-item">
+                  <div class="j-accordion-title clearfix" data-dropdown-title>
+                    <div class="j-accordion-title-arrow"></div>
+                    <p>1. 在简单心理可以做什么？</p>
+                  </div>
+                  <div class="j-accordion-content-box">
+                    <div class="j-accordion-content">
+                      在简单心理可以做什么？<br>
+                      预约咨询<br>
+                      你可以通过网页或app方便地预约咨询。APP首页点击 “个体咨询”，可以浏览并选择你感兴趣的咨询师，单击进入页面了解关于咨询师的详细介绍。如果想预约ta，点击“预约咨询”。（如果该咨询师预约已满，按钮会变成 灰色并不可点击，你可以点击“订阅”，那么咨询师开放时间时会提醒你）<br>
+                    </div>
+                  </div>
+                </div>
+                <div class="j-accordion-item">
+                  <div class="j-accordion-title clearfix" data-dropdown-title>
+                    <div class="j-accordion-title-arrow"></div>
+                    <p>2. 如何在简单心理预约咨询？</p>
+                  </div>
+                  <div class="j-accordion-content-box">
+                    <div class="j-accordion-content">
+                      详细步骤说明：<br>
+                      1、注册简单心理：<br>
+                      推荐使用手机号进行注册，如果使用邮箱注册，请不要使用qq邮箱。
+                    </div>
+                  </div>
+                </div>
+                <div class="j-accordion-item">
+                  <div class="j-accordion-title clearfix" data-dropdown-title>
+                    <div class="j-accordion-title-arrow"></div>
+                    <p>3. 咨询完成后，如何续约？</p>
+                  </div>
+                  <div class="j-accordion-content-box">
+                    <div class="j-accordion-content">
+                      咨询完成后，如何续约？<br>
+                      1.当你完成一次咨询后，可以在 我的-心理咨询 中找到对应的记录并续约
+                    </div>
+                  </div>
+                </div>
+                <div class="j-accordion-item">
+                  <div class="j-accordion-title clearfix" data-dropdown-title>
+                    <div class="j-accordion-title-arrow"></div>
+                    <p>4. 简单心理在我们当地没有咨询师，该怎么办？</p>
+                  </div>
+                  <div class="j-accordion-content-box">
+                    <div class="j-accordion-content">
+                      简单心理在我们本地没有咨询师，怎么办？<br>
+                      简单心理在我们本地没有咨询师，怎么办？<br>
+                      如果简单心理在你们当地没有咨询师，建议您尝试选择其他城市的咨询师，进行视频咨询。
+                    </div>
+                  </div>
+                </div>
+                <div class="j-accordion-item">
+                  <div class="j-accordion-title clearfix" data-dropdown-title>
+                    <div class="j-accordion-title-arrow"></div>
+                    <p>5. 如何进行视频咨询？</p>
+                  </div>
+                  <div class="j-accordion-content-box">
+                    <div class="j-accordion-content">
+                      如何进行视频咨询？<br>
+                      目前视频咨询主要通过两种方式进行，QQ或Skype。在预约成功后，您可以看到咨询师提供的具体方式。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ui-code">
+              <pre><div class="j-accordion">
+  <div class="j-accordion-item">
+    <div class="j-accordion-title clearfix" data-dropdown-title>
+      <div class="j-accordion-title-arrow"></div>
+      <p>1. 在简单心理可以做什么？</p>
+    </div>
+    <div class="j-accordion-content-box">
+      <div class="j-accordion-content">
+        在简单心理可以做什么？<br>
+        预约咨询<br>
+        你可以通过网页或app方便地预约咨询。APP首页点击 “个体咨询”，可以浏览并选择你感兴趣的咨询师，单击进入页面了解关于咨询师的详细介绍。如果想预约ta，点击“预约咨询”。（如果该咨询师预约已满，按钮会变成 灰色并不可点击，你可以点击“订阅”，那么咨询师开放时间时会提醒你）<br>
+      </div>
+    </div>
+  </div>
+  <div class="j-accordion-item">
+    <div class="j-accordion-title clearfix" data-dropdown-title>
+      <div class="j-accordion-title-arrow"></div>
+      <p>2. 如何在简单心理预约咨询？</p>
+    </div>
+    <div class="j-accordion-content-box">
+      <div class="j-accordion-content">
+        详细步骤说明：<br>
+        1、注册简单心理：<br>
+        推荐使用手机号进行注册，如果使用邮箱注册，请不要使用qq邮箱。
+      </div>
+    </div>
+  </div>
+  <div class="j-accordion-item">
+    <div class="j-accordion-title clearfix" data-dropdown-title>
+      <div class="j-accordion-title-arrow"></div>
+      <p>3. 咨询完成后，如何续约？</p>
+    </div>
+    <div class="j-accordion-content-box">
+      <div class="j-accordion-content">
+        咨询完成后，如何续约？<br>
+        1.当你完成一次咨询后，可以在 我的-心理咨询 中找到对应的记录并续约
+      </div>
+    </div>
+  </div>
+  <div class="j-accordion-item">
+    <div class="j-accordion-title clearfix" data-dropdown-title>
+      <div class="j-accordion-title-arrow"></div>
+      <p>4. 简单心理在我们当地没有咨询师，该怎么办？</p>
+    </div>
+    <div class="j-accordion-content-box">
+      <div class="j-accordion-content">
+        简单心理在我们本地没有咨询师，怎么办？<br>
+        简单心理在我们本地没有咨询师，怎么办？<br>
+        如果简单心理在你们当地没有咨询师，建议您尝试选择其他城市的咨询师，进行视频咨询。
+      </div>
+    </div>
+  </div>
+  <div class="j-accordion-item">
+    <div class="j-accordion-title clearfix" data-dropdown-title>
+      <div class="j-accordion-title-arrow"></div>
+      <p>5. 如何进行视频咨询？</p>
+    </div>
+    <div class="j-accordion-content-box">
+      <div class="j-accordion-content">
+        如何进行视频咨询？<br>
+        目前视频咨询主要通过两种方式进行，QQ或Skype。在预约成功后，您可以看到咨询师提供的具体方式。
+      </div>
+    </div>
+  </div>
+</div></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/j-ui.min.js"></script>
+    <script src="public/js/index.js"></script>
+  </body>
+</html>
