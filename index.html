@@ -440,7 +440,108 @@
 </div>
 <div class="j-alert j-alert-error j-alert-noborder">
   <div class="j-alert-content j-alert-center j-alert-distinct">错误：请填写以下必填项</div>
-</div></pre></div></div></div><div class="ui-container" id="modal"><div class="ui-title">弹窗（modal）</div><div class="ui-group"><div class="ui-introduce"><p> </p></div><div class="ui-show"></div><div class="ui-code"><pre></pre></div></div></div><div class="ui-container" id="accordion"><div class="ui-title">手风琴（accordion）</div><div class="ui-group"><div class="ui-introduce"><p> </p></div><div class="ui-show"></div><div class="ui-code"><pre></pre></div></div></div><div class="ui-container" id="feed"><div class="ui-title">feed流（feed）</div><div class="ui-group"><div class="ui-introduce"><p>首页feed流</p></div><div class="ui-show"><div class="ui-bg"><div class="j-feed"><div class="j-feed-item" href="#"><span class="j-feed-container"><span class="j-feed-content"><span class="j-feed-title">Feed流标题</span><span class="j-feed-sub">Feed流副标题</span></span><span class="j-feed-img" style="background-image: url('public/images/bg.jpeg');"></span></span><span class="j-feed-footer j-clear"><span class="j-feed-author"><img class="j-feed-avatar" src="public/images/avatar.jpg"><span>简单心理</span></span><span class="j-feed-des">1900 阅读 · 文章</span></span></div><div class="j-feed-item" href="#"><span class="j-feed-container"><span class="j-feed-content"><span class="j-feed-title">Feed流标题</span><span class="j-feed-sub">Feed流副标题</span></span><span class="j-feed-img" style="background-image: url('public/images/bg.jpeg');"></span></span><span class="j-feed-footer j-clear"><span class="j-feed-author"><img class="j-feed-avatar" src="public/images/avatar.jpg"><span>简单心理</span></span><span class="j-feed-des">1900 阅读 · 文章</span></span></div><div class="j-feed-item" href="#"><span class="j-feed-container"><span class="j-feed-content"><span class="j-feed-title">Feed流标题</span><span class="j-feed-sub">Feed流副标题</span></span><span class="j-feed-img" style="background-image: url('public/images/bg.jpeg');"></span></span><span class="j-feed-footer j-clear"><span class="j-feed-author"><img class="j-feed-avatar" src="public/images/avatar.jpg"><span>简单心理</span></span><span class="j-feed-des">1900 阅读 · 文章</span></span></div></div></div></div><div class="ui-code"><pre><div class="j-feed">
+</div></pre></div></div></div><div class="ui-container" id="modal"><div class="ui-title">弹窗（modal）</div><div class="ui-group"><div class="ui-introduce"><p> </p></div><div class="ui-show"><div class="ui-bg j-clear"><div class="j-btn" data-model="modal1">modal1</div><div class="j-btn" data-model="modal2">modal2</div><div class="j-btn" data-model="modal3">modal3</div><div class="j-modal" id="modal1"><div class="j-modal-container"><div class="j-modal-header"><div class="j-modal-close" data-close></div></div><div class="j-modal-content">请填写相关内容！</div></div></div><div class="j-modal" id="modal2"><div class="j-modal-container"><div class="j-modal-header">放弃预约</div><div class="j-modal-content">确定放弃预约？</div><div class="j-modal-footer"><div class="j-btn j-btn-border j-btn-s" data-close>取消</div><div class="j-btn j-btn-s">确定</div></div></div></div><div class="j-modal" id="modal3"><div class="j-modal-container"><div class="j-modal-content">在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。</div><div class="j-modal-footer"><div class="j-btn j-btn-border j-btn-s" data-close>取消</div><div class="j-btn j-btn-s">确定</div></div></div></div></div></div><div class="ui-code"><pre><div class="j-btn" data-model="modal1">modal1</div>
+<div class="j-btn" data-model="modal2">modal2</div>
+<div class="j-btn" data-model="modal3">modal3</div>
+<div class="j-modal" id="modal1">
+  <div class="j-modal-container">
+    <div class="j-modal-header">
+      <div class="j-modal-close" data-close></div>
+    </div>
+    <div class="j-modal-content">请填写相关内容！</div>
+  </div>
+</div>
+<div class="j-modal" id="modal2">
+  <div class="j-modal-container">
+    <div class="j-modal-header">放弃预约</div>
+    <div class="j-modal-content">确定放弃预约？</div>
+    <div class="j-modal-footer">
+      <div class="j-btn j-btn-border j-btn-s" data-close>取消</div>
+      <div class="j-btn j-btn-s">确定</div>
+    </div>
+  </div>
+</div>
+<div class="j-modal" id="modal3">
+  <div class="j-modal-container">
+    <div class="j-modal-content">在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。</div>
+    <div class="j-modal-footer">
+      <div class="j-btn j-btn-border j-btn-s" data-close>取消</div>
+      <div class="j-btn j-btn-s">确定</div>
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>全屏弹窗</p></div><div class="ui-show"><div class="ui-bg j-clear"><div class="j-btn" data-model="modal4">modal</div><div class="j-modal j-modal-full" id="modal4"><div class="j-modal-container"><div class="j-modal-header"><div class="j-modal-close" data-close></div></div><div class="j-modal-content">在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。</div></div></div></div></div><div class="ui-code"><pre><div class="j-btn" data-model="modal4">modal</div>
+<div class="j-modal j-modal-full" id="modal4">
+  <div class="j-modal-container">
+    <div class="j-modal-header">
+      <div class="j-modal-close" data-close></div>
+    </div>
+    <div class="j-modal-content">在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。在合理范围内的适度惩罚是有积极意义的，它使我们纠正自己的行为，在错误中汲取教训，不做违背规范的事情。它也确实能在短时间内带来一些宽慰感、正义感。<br>但长期的、慢性的自我惩罚，有可能对心理健康造成严重的伤害。<br>自我伤害是边缘型人格障碍的主要特征，也与其他心理疾病相关，如抑郁、焦虑、饮食障碍、创伤后应激障碍等。<br>那些在经历过灾难、战争或恶性事件的幸存者们，通常会产生类似于“为什么活下来的是我”、“如果当时怎样，就能有更多人活下来了”这样的想法。 <br>他们之中的有些人终其一生都无法原谅自己，每天都在受着良心和回忆的煎熬。<br>研究者们将其称为道德受虐（moral masochism），同时发现他们容易在之后做出伤害自己的行为、以此来惩罚自己，故意让自己“过得不好”。</div>
+  </div>
+</div></pre></div></div></div><div class="ui-container" id="accordion"><div class="ui-title">手风琴（accordion）</div><div class="ui-group"><div class="ui-introduce"><p> </p></div><div class="ui-show"><div class="ui-bg"><div class="j-accordion"><div class="j-accordion-item"><div class="j-accordion-title j-clear" data-dropdown-title><div class="j-accordion-title-arrow"></div><p>1. 在简单心理可以做什么？</p></div><div class="j-accordion-content-box"><div class="j-accordion-content">在简单心理可以做什么？<br>预约咨询<br>你可以通过网页或app方便地预约咨询。APP首页点击 “个体咨询”，可以浏览并选择你感兴趣的咨询师，单击进入页面了解关于咨询师的详细介绍。如果想预约ta，点击“预约咨询”。（如果该咨询师预约已满，按钮会变成 灰色并不可点击，你可以点击“订阅”，那么咨询师开放时间时会提醒你）</div></div></div><div class="j-accordion-item"><div class="j-accordion-title j-clear" data-dropdown-title><div class="j-accordion-title-arrow"></div><p>2. 如何在简单心理预约咨询？</p></div><div class="j-accordion-content-box"><div class="j-accordion-content">详细步骤说明：<br>1、注册简单心理：<br>推荐使用手机号进行注册，如果使用邮箱注册，请不要使用qq邮箱。</div></div></div><div class="j-accordion-item"><div class="j-accordion-title j-clear" data-dropdown-title><div class="j-accordion-title-arrow"></div><p>3. 咨询完成后，如何续约？</p></div><div class="j-accordion-content-box"><div class="j-accordion-content">咨询完成后，如何续约？<br>1.当你完成一次咨询后，可以在 我的-心理咨询 中找到对应的记录并续约</div></div></div><div class="j-accordion-item"><div class="j-accordion-title j-clear" data-dropdown-title><div class="j-accordion-title-arrow"></div><p>4. 简单心理在我们当地没有咨询师，该怎么办？</p></div><div class="j-accordion-content-box"><div class="j-accordion-content">简单心理在我们本地没有咨询师，怎么办？<br>简单心理在我们本地没有咨询师，怎么办？<br>如果简单心理在你们当地没有咨询师，建议您尝试选择其他城市的咨询师，进行视频咨询。</div></div></div><div class="j-accordion-item"><div class="j-accordion-title j-clear" data-dropdown-title><div class="j-accordion-title-arrow"></div><p>5. 如何进行视频咨询？</p></div><div class="j-accordion-content-box"><div class="j-accordion-content">如何进行视频咨询？<br>目前视频咨询主要通过两种方式进行，QQ或Skype。在预约成功后，您可以看到咨询师提供的具体方式。</div></div></div></div></div></div><div class="ui-code"><pre><div class="j-accordion">
+ <div class="j-accordion-item">
+   <div class="j-accordion-title j-clear" data-dropdown-title>
+     <div class="j-accordion-title-arrow"></div>
+     <p>1. 在简单心理可以做什么？</p>
+   </div>
+   <div class="j-accordion-content-box">
+     <div class="j-accordion-content">
+        在简单心理可以做什么？<br>
+        预约咨询<br>
+        你可以通过网页或app方便地预约咨询。APP首页点击 “个体咨询”，可以浏览并选择你感兴趣的咨询师，单击进入页面了解关于咨询师的详细介绍。如果想预约ta，点击“预约咨询”。（如果该咨询师预约已满，按钮会变成 灰色并不可点击，你可以点击“订阅”，那么咨询师开放时间时会提醒你）<br>
+      </div>
+    </div>
+  </div>
+  <div class="j-accordion-item">
+    <div class="j-accordion-title j-clear" data-dropdown-title>
+      <div class="j-accordion-title-arrow"></div>
+      <p>2. 如何在简单心理预约咨询？</p>
+    </div>
+    <div class="j-accordion-content-box">
+      <div class="j-accordion-content">
+        详细步骤说明：<br>
+        1、注册简单心理：<br>
+        推荐使用手机号进行注册，如果使用邮箱注册，请不要使用qq邮箱。
+      </div>
+    </div>
+  </div>
+  <div class="j-accordion-item">
+    <div class="j-accordion-title j-clear" data-dropdown-title>
+      <div class="j-accordion-title-arrow"></div>
+      <p>3. 咨询完成后，如何续约？</p>
+    </div>
+    <div class="j-accordion-content-box">
+      <div class="j-accordion-content">
+        咨询完成后，如何续约？<br>
+        1.当你完成一次咨询后，可以在 我的-心理咨询 中找到对应的记录并续约
+      </div>
+    </div>
+  </div>
+  <div class="j-accordion-item">
+    <div class="j-accordion-title j-clear" data-dropdown-title>
+      <div class="j-accordion-title-arrow"></div>
+      <p>4. 简单心理在我们当地没有咨询师，该怎么办？</p>
+    </div>
+    <div class="j-accordion-content-box">
+      <div class="j-accordion-content">
+        简单心理在我们本地没有咨询师，怎么办？<br>
+        简单心理在我们本地没有咨询师，怎么办？<br>
+        如果简单心理在你们当地没有咨询师，建议您尝试选择其他城市的咨询师，进行视频咨询。
+      </div>
+    </div>
+  </div>
+  <div class="j-accordion-item">
+    <div class="j-accordion-title j-clear" data-dropdown-title>
+      <div class="j-accordion-title-arrow"></div>
+      <p>5. 如何进行视频咨询？</p>
+    </div>
+    <div class="j-accordion-content-box">
+      <div class="j-accordion-content">
+       如何进行视频咨询？<br>
+       目前视频咨询主要通过两种方式进行，QQ或Skype。在预约成功后，您可以看到咨询师提供的具体方式。
+      </div>
+    </div>
+  </div>
+</div></pre></div></div></div><div class="ui-container" id="feed"><div class="ui-title">feed流（feed）</div><div class="ui-group"><div class="ui-introduce"><p>首页feed流</p></div><div class="ui-show"><div class="ui-bg"><div class="j-feed"><div class="j-feed-item" href="#"><span class="j-feed-container"><span class="j-feed-content"><span class="j-feed-title">Feed流标题</span><span class="j-feed-sub">Feed流副标题</span></span><span class="j-feed-img" style="background-image: url('public/images/bg.jpeg');"></span></span><span class="j-feed-footer j-clear"><span class="j-feed-author"><img class="j-feed-avatar" src="public/images/avatar.jpg"><span>简单心理</span></span><span class="j-feed-des">1900 阅读 · 文章</span></span></div><div class="j-feed-item" href="#"><span class="j-feed-container"><span class="j-feed-content"><span class="j-feed-title">Feed流标题</span><span class="j-feed-sub">Feed流副标题</span></span><span class="j-feed-img" style="background-image: url('public/images/bg.jpeg');"></span></span><span class="j-feed-footer j-clear"><span class="j-feed-author"><img class="j-feed-avatar" src="public/images/avatar.jpg"><span>简单心理</span></span><span class="j-feed-des">1900 阅读 · 文章</span></span></div><div class="j-feed-item" href="#"><span class="j-feed-container"><span class="j-feed-content"><span class="j-feed-title">Feed流标题</span><span class="j-feed-sub">Feed流副标题</span></span><span class="j-feed-img" style="background-image: url('public/images/bg.jpeg');"></span></span><span class="j-feed-footer j-clear"><span class="j-feed-author"><img class="j-feed-avatar" src="public/images/avatar.jpg"><span>简单心理</span></span><span class="j-feed-des">1900 阅读 · 文章</span></span></div></div></div></div><div class="ui-code"><pre><div class="j-feed">
   <a class="j-feed-item" href="#">
     <span class="j-feed-container">
       <span class="j-feed-content">
