@@ -288,7 +288,88 @@
     <input type="text">
     <div class="j-search-bar-btn">搜索</div>
   </div>
-</div></pre></div></div></div><div class="ui-container" id="header"><div class="ui-title">导航（header）</div><div class="ui-group"><div class="ui-introduce"><p> </p></div><div class="ui-show"></div><div class="ui-code"><pre></pre></div></div></div><div class="ui-container" id="footer"><div class="ui-title">底部（footer）</div><div class="ui-group"><div class="ui-introduce"><p> </p></div><div class="ui-show"></div><div class="ui-code"><pre></pre></div></div></div><div class="ui-container" id="alert"><div class="ui-title">警告（alert）</div><div class="ui-group"><div class="ui-introduce"><p>警告分为成功、提示、警告、错误四种样式，自动适应PC端和Mobile端</p><p>默认不吸顶，如需吸顶请在“.j-alert”层添加“.j-alert-fixed”样式，吸顶会自动去除边框和圆角样式</p><p>左侧icon和右侧close可依据情况添加或去除，文字会自动适应宽度</p></div><div class="ui-show"><div class="j-alert"><div class="j-alert-icon j-alert-icon-remind"></div><div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div><div class="j-alert-close"></div></div><div class="j-alert j-alert-success"><div class="j-alert-icon j-alert-icon-success"></div><div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div><div class="j-alert-close"></div></div><div class="j-alert j-alert-warn"><div class="j-alert-icon j-alert-icon-warn"></div><div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div><div class="j-alert-close"></div></div><div class="j-alert j-alert-error"><div class="j-alert-icon j-alert-icon-error"></div><div class="j-alert-content">错误：请填写以下必填项</div><div class="j-alert-close"></div></div></div><div class="ui-code"><pre><div class="j-alert">
+</div></pre></div></div></div><div class="ui-container" id="header"><div class="ui-title">导航（header）</div><div class="ui-group"><div class="ui-introduce"><p>PC端：</p><p>默认不吸顶，如需吸顶请在.j-nav后添加.j-nav-fixed样式</p></div><div class="ui-show"><div class="ui-bg"><div class="j-nav mobile-none"><div class="j-nav-container"><div class="j-nav-logo"><a href="#"><img src="public/images/logo.png"></a></div><div class="j-nav-bar"><div class="j-nav-menu"><a href="#">menu1</a><div class="j-nav-dropdown-box"><div class="j-nav-dropdown"><a class="j-nav-dropdown-item" href="#">dropdown</a><a class="j-nav-dropdown-item" href="#">dropdown</a><a class="j-nav-dropdown-item" href="#">dropdown</a><a class="j-nav-dropdown-item" href="#">dropdown</a></div></div></div><div class="j-nav-menu"><a href="#">menu2</a></div><div class="j-nav-icon"><a href="#">icon</a></div></div></div></div><div class="ui-tips desktop-none">请在PC端查看</div></div></div><div class="ui-code"><pre><div class="j-nav">
+  <div class="j-nav-container">
+    <div class="j-nav-logo">
+      <a href="#">
+        <img src="public/images/logo.png">
+      </a>
+    </div>
+    <div class="j-nav-bar">
+      <div class="j-nav-menu">
+        <a href="#">menu1</a>
+        <div class="j-nav-dropdown-box">
+          <div class="j-nav-dropdown">
+            <a href="#" class="j-nav-dropdown-item">dropdown</a>
+            <a href="#" class="j-nav-dropdown-item">dropdown</a>
+            <a href="#" class="j-nav-dropdown-item">dropdown</a>
+            <a href="#" class="j-nav-dropdown-item">dropdown</a>
+          </div>
+        </div>
+      </div>
+      <div class="j-nav-menu">
+        <a href="#">menu2</a>
+      </div>
+      <div class="j-nav-icon">
+        <a href="#">icon</a>
+      </div>
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>Mobile端：</p><p>默认不吸顶，如需吸顶请在.j-nav后添加.j-nav-fixed样式</p><p>可设置居左的logo</p></div><div class="ui-show"><div class="ui-bg"><div class="j-nav desktop-none"><div class="j-nav-container"><div class="j-nav-logo-left"><a href="#"><img src="public/images/logo.png"></a></div></div></div><div class="ui-tips mobile-none">请在Mobile端查看</div></div></div><div class="ui-code"><pre><div class="j-nav">
+  <div class="j-nav-container">
+    <div class="j-nav-logo-left">
+      <a href="#">
+        <img src="public/images/logo.png">
+      </a>
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>可设置居中的logo</p></div><div class="ui-show"><div class="ui-bg"><div class="j-nav desktop-none"><div class="j-nav-container"><div class="j-nav-logo"><img src="public/images/logo.png"></div></div></div><div class="ui-tips mobile-none">请在Mobile端查看</div></div></div><div class="ui-code"><pre><div class="j-nav">
+  <div class="j-nav-container">
+    <div class="j-nav-logo">
+      <img src="public/images/logo.png">
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>可设置居中的title</p><p>也可同时添加左右两侧的图标</p></div><div class="ui-show"><div class="ui-bg"><div class="j-nav desktop-none"><div class="j-nav-container"><div class="j-nav-icon-left"><a href="#"><img src="public/images/search.png"></a></div><div class="j-nav-title">简单心理</div><div class="j-nav-icon-right"><a href="#"><img src="public/images/search.png"></a></div></div></div><div class="ui-tips mobile-none">请在Mobile端查看</div></div></div><div class="ui-code"><pre><div class="j-nav">
+  <div class="j-nav-container">
+    <div class="j-nav-icon-left">
+      <a href="#">
+        <img src="public/images/search.png">
+      </a>
+    </div>
+    <div class="j-nav-title">简单心理</div>
+    <div class="j-nav-icon-right">
+      <a href="#">
+        <img src="public/images/search.png">
+      </a>
+    </div>
+  </div>
+</div></pre></div></div></div><div class="ui-container" id="footer"><div class="ui-title">底部（footer）</div><div class="ui-group"><div class="ui-introduce"><p>PC端：</p><p>默认不悬浮，如需悬浮底部请在“.j-footer”层加“.j-footer-fixed”</p></div><div class="ui-show"><div class="ui-bg"><div class="j-footer mobile-none"><div class="j-footer-container"><div class="j-footer-content">test</div></div><div class="j-footer-copyright"><div class="j-footer-container">copyright</div></div></div><div class="ui-tips desktop-none">请在PC端查看</div></div></div><div class="ui-code"><pre><div class="j-footer">
+  <div class="j-footer-container">
+    <div class="j-footer-content">test</div>
+  </div>
+  <div class="j-footer-copyright">
+    <div class="j-footer-container">copyright</div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>Mobile端：</p><p>底部交互</p><p>默认不悬浮，如需悬浮底部请在“.j-footer”层加“.j-footer-fixed”</p></div><div class="ui-show"><div class="ui-bg"><div class="j-footer j-footer-menu desktop-none"><div class="j-footer-menu-icon-left"><a href="#"><img src="public/images/search.png"></a><a href="#"><img src="public/images/search.png"></a></div><div class="j-footer-menu-btn"><a href="#">btn</a></div><div class="j-footer-menu-icon-right"><a href="#"><img src="public/images/search.png"></a></div></div><div class="ui-tips mobile-none">请在Mobile端查看</div></div></div><div class="ui-code"><pre><div class="j-footer j-footer-menu">
+  <div class="j-footer-menu-icon-left">
+    <a href="#">
+      <img src="public/images/search.png">
+    </a>
+    <a href="#">
+      <img src="public/images/search.png">
+    </a>
+  </div>
+  <div class="j-footer-menu-btn">
+    <a href="#">btn</a>
+  </div>
+  <div class="j-footer-menu-icon-right">
+    <a href="#">
+      <img src="public/images/search.png">
+    </a>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>底部按钮</p><p>默认不悬浮，如需悬浮底部请在“.j-footer”层加“.j-footer-fixed”</p></div><div class="ui-show"><div class="ui-bg"><div class="j-footer j-footer-btn desktop-none"><a href="#">btn</a></div><div class="ui-tips mobile-none">请在Mobile端查看</div></div></div><div class="ui-code"><pre><div class="j-footer j-footer-btn">
+  <a href="#">btn</a>
+</div></pre></div></div></div><div class="ui-container" id="alert"><div class="ui-title">警告（alert）</div><div class="ui-group"><div class="ui-introduce"><p>警告分为成功、提示、警告、错误四种样式，自动适应PC端和Mobile端</p><p>默认不吸顶，如需吸顶请在“.j-alert”层添加“.j-alert-fixed”样式，吸顶会自动去除边框和圆角样式</p><p>左侧icon和右侧close可依据情况添加或去除，文字会自动适应宽度</p></div><div class="ui-show"><div class="j-alert"><div class="j-alert-icon j-alert-icon-remind"></div><div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div><div class="j-alert-close"></div></div><div class="j-alert j-alert-success"><div class="j-alert-icon j-alert-icon-success"></div><div class="j-alert-content">成功的通知：欢迎回来，Erin：）</div><div class="j-alert-close"></div></div><div class="j-alert j-alert-warn"><div class="j-alert-icon j-alert-icon-warn"></div><div class="j-alert-content">警告：修改咨询时间需提前24小时私信咨询师，24小时以内不能修改。错过咨询时间无法退款哦。</div><div class="j-alert-close"></div></div><div class="j-alert j-alert-error"><div class="j-alert-icon j-alert-icon-error"></div><div class="j-alert-content">错误：请填写以下必填项</div><div class="j-alert-close"></div></div></div><div class="ui-code"><pre><div class="j-alert">
   <div class="j-alert-icon j-alert-icon-remind"></div>
   <div class="j-alert-content">提示：咨询师本人承诺以上资料真实准确，接受公众监督，并为此承担相应法律责任。如果你发现有虚假信息。</div>
   <div class="j-alert-close"></div>
