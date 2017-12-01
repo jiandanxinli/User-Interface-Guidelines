@@ -232,16 +232,205 @@
       </span>
     </a>
   </div>
-</div></pre></div></div></div><div class="ui-container" id="form"><div class="ui-title">表单（form）</div><div class="ui-group"><div class="ui-introduce"><p>表单所以内容都要包含在容器“.j-form”中</p><p>包括输入框、文字输入区域、单选、多选、下拉菜单、搜索框</p></div><div class="ui-show"><div class="j-form"><input type="text" placeholder="请输入..."></div></div><div class="ui-code"><pre><div class="j-form">
-  <input type="text" placeholder="请输入...">
+</div></pre></div></div></div><div class="ui-container" id="form"><div class="ui-title">表单（form）</div><div class="ui-group"><div class="ui-introduce"><p>表单所有内容都要包含在容器“.j-form”中</p><p>表单介绍“j-form-des”：</p><p>表单介绍内含有介绍标题“j-form-des-title”和介绍内容“j-form-des-text”，介绍内容内用p分段</p><p>介绍内容中的链接为蓝色</p></div><div class="ui-show"><div class="j-form"><div class="j-form-des"><div class="j-form-des-title">这里是表单简介的标题</div><div class="j-form-des-text"><p>专业预嘱是预先制定的一个计划，在咨询师意外死亡，或意外受伤、生病，无法处理和安排工作时，最大限度地确保咨询师的咨询工作能顺利延续下去，减低来访者因咨询中断造成的影响，保护咨询师的家人和同事免于被迫为咨询师处理工作事务的巨大困难和压力。</p><p>这个《专业预嘱信息登记表》将协助你完成这一计划的制定，提供给简单心理必要的信息，用于贯彻《简单心理合作咨询师专业预嘱协议》所必须执行的任务，尽力安排你在简单心理的咨询工作。</p><p>注意：</p><p>1、填写《专业预嘱信息登记表》的第一步，请确认已经阅读并接受<a href="#">《简单心理合作咨询师专业预嘱协议》</a></p><p>2、为了此登记表的实用性和有效性，请定期检查和更新登记表内的信息。</p></div></div></div></div><div class="ui-code"><pre><div class="j-form">
+  <div class="j-form-des">
+    <div class="j-form-des-title">这里是表单简介的标题</div>
+    <div class="j-form-des-text">
+      <p>专业预嘱是预先制定的一个计划，在咨询师意外死亡，或意外受伤、生病，无法处理和安排工作时，最大限度地确保咨询师的咨询工作能顺利延续下去，减低来访者因咨询中断造成的影响，保护咨询师的家人和同事免于被迫为咨询师处理工作事务的巨大困难和压力。</p>
+      <p>这个《专业预嘱信息登记表》将协助你完成这一计划的制定，提供给简单心理必要的信息，用于贯彻《简单心理合作咨询师专业预嘱协议》所必须执行的任务，尽力安排你在简单心理的咨询工作。</p>
+      <p>注意：</p>
+      <p>1、填写《专业预嘱信息登记表》的第一步，请确认已经阅读并接受<a href="#">《简单心理合作咨询师专业预嘱协议》</a></p>
+      <p>2、为了此登记表的实用性和有效性，请定期检查和更新登记表内的信息。</p>
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>表单域“j-form-field”：</p></div><div class="ui-show"><div class="ui-bg"><div class="j-form">
+<div class="j-form-field">
+<div class="j-form-field-title-container">
+<div class="j-form-field-title">表单域的标题，行间距是33px。表单域的标题，行间距是33px。</div>
+</div>
+<div class="j-form-container">
+<div class="j-form-item">
+<div class="j-form-title">姓名</div>
+<input type="text">
+</div>
+<div class="j-form-item j-clear">
+<div class="j-form-title">性别</div>
+<div class="j-form-radio">
+<input type="radio" id="id1" name="test">
+<label for="id1">男</label>
+</div>
+<div class="j-form-radio">
+<input type="radio" id="id2" name="test">
+<label for="id2">女</label>
+</div>
+</div>
+</div>
+</div>
+</div></div></div><div class="ui-code"><pre><div class="j-form">
+  <div class="j-form-field">
+    <div class="j-form-field-title-container">
+      <div class="j-form-field-title">表单域的标题，行间距是33px。表单域的标题，行间距是33px。</div>
+    </div>
+    <div class="j-form-container">
+      <div class="j-form-item">
+        <div class="j-form-title">姓名</div>
+        <input type="text">
+      </div>
+      <div class="j-form-item j-clear">
+        <div class="j-form-title">性别</div>
+        <div class="j-form-radio">
+          <input type="radio" id="id1" name="test">
+          <label for="id1">男</label>
+        </div>
+        <div class="j-form-radio">
+          <input type="radio" id="id2" name="test">
+          <label for="id2">女</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>表单域标题带介绍</p></div><div class="ui-show"><div class="ui-bg"><div class="j-form">
+<div class="j-form-field">
+<div class="j-form-field-title-container">
+<div class="j-form-field-title">表单域的标题</div>
+<div class="j-form-field-tips">
+<p>1、请按完成培训从前到后的时间顺序，填写1-2年以上的系统训练，请勿填写短期培训。</p>
+<p>2、请仅填写完成课程并且获得毕业证书的培训，不包括肄业或正在接受的情况。</p>
+<p>3、培训信息经审核后将在你的个人页面“资质与受训”栏目，按照您目前的填写顺序展示，请确保描述符合课程方的建议与要求。如下拉项中没有你所参加的培训信息，请选择“其它”并输入准确的培训名称及主办机构。</p>
+</div>
+</div>
+<div class="j-form-container">
+<div class="j-form-item">
+<div class="j-form-title">姓名</div>
+<input type="text">
+</div>
+</div>
+</div>
+</div></div></div><div class="ui-code"><pre><div class="j-form">
+  <div class="j-form-field">
+    <div class="j-form-field-title-container">
+      <div class="j-form-field-title">表单域的标题</div>
+      <div class="j-form-field-tips">
+        <p>1、请按完成培训从前到后的时间顺序，填写1-2年以上的系统训练，请勿填写短期培训。</p>
+        <p>2、请仅填写完成课程并且获得毕业证书的培训，不包括肄业或正在接受的情况。</p>
+        <p>3、培训信息经审核后将在你的个人页面“资质与受训”栏目，按照您目前的填写顺序展示，请确保描述符合课程方的建议与要求。如下拉项中没有你所参加的培训信息，请选择“其它”并输入准确的培训名称及主办机构。</p>
+      </div>
+    </div>
+    <div class="j-form-container">
+      <div class="j-form-item">
+        <div class="j-form-title">姓名</div>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>表单域标题也可以只有介绍</p></div><div class="ui-show"><div class="ui-bg"><div class="j-form">
+<div class="j-form-field">
+<div class="j-form-field-title-container">
+<div class="j-form-field-tips">
+<p>1、请按完成培训从前到后的时间顺序，填写1-2年以上的系统训练，请勿填写短期培训。</p>
+<p>2、请仅填写完成课程并且获得毕业证书的培训，不包括肄业或正在接受的情况。</p>
+<p>3、培训信息经审核后将在你的个人页面“资质与受训”栏目，按照您目前的填写顺序展示，请确保描述符合课程方的建议与要求。如下拉项中没有你所参加的培训信息，请选择“其它”并输入准确的培训名称及主办机构。</p>
+</div>
+</div>
+<div class="j-form-container">
+<div class="j-form-item">
+<div class="j-form-title">姓名</div>
+<input type="text">
+</div>
+</div>
+</div>
+</div></div></div><div class="ui-code"><pre><div class="j-form">
+  <div class="j-form-field">
+    <div class="j-form-field-title-container">
+      <div class="j-form-field-tips">
+        <p>1、请按完成培训从前到后的时间顺序，填写1-2年以上的系统训练，请勿填写短期培训。</p>
+        <p>2、请仅填写完成课程并且获得毕业证书的培训，不包括肄业或正在接受的情况。</p>
+        <p>3、培训信息经审核后将在你的个人页面“资质与受训”栏目，按照您目前的填写顺序展示，请确保描述符合课程方的建议与要求。如下拉项中没有你所参加的培训信息，请选择“其它”并输入准确的培训名称及主办机构。</p>
+      </div>
+    </div>
+    <div class="j-form-container">
+      <div class="j-form-item">
+        <div class="j-form-title">姓名</div>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>可重复的表单域</p></div><div class="ui-show"><div class="ui-bg"><div class="j-form">
+<div class="j-form-field">
+<div class="j-form-field-title-container">
+<div class="j-form-field-title">表单域的标题</div>
+</div>
+<div class="j-form-container">
+<div class="j-form-field">
+<div class="j-form-item j-clear">
+<div class="j-form-item">
+<div class="j-form-title">资质证明</div>
+<input type="text" placeholder="请输入">
+</div>
+<div class="j-form-item j-clear">
+<div class="j-form-title">证书编号</div>
+<input type="text" placeholder="请输入">
+</div>
+</div>
+</div>
+<div class="j-form-field">
+<div class="j-form-item">
+<div class="j-form-title">资质证明</div>
+<input type="text" placeholder="请输入">
+</div>
+<div class="j-form-item j-clear">
+<div class="j-form-title">证书编号</div>
+<input type="text" placeholder="请输入">
+</div>
+<div class="j-form-del">删除该资质证明</div>
+</div>
+<div class="j-form-add">添加更多资质证明</div>
+</div>
+</div>
+</div></div></div><div class="ui-code"><pre><div class="j-form">
+  <div class="j-form-field">
+    <div class="j-form-field-title-container">
+      <div class="j-form-field-title">表单域的标题</div>
+    </div>
+    <div class="j-form-container">
+      <div class="j-form-field">
+        <div class="j-form-item j-clear">
+          <div class="j-form-item">
+            <div class="j-form-title">资质证明</div>
+            <input type="text" placeholder="请输入">
+          </div>
+          <div class="j-form-item j-clear">
+            <div class="j-form-title">证书编号</div>
+            <input type="text" placeholder="请输入">
+          </div>
+        </div>
+      </div>
+      <div class="j-form-field">
+        <div class="j-form-item">
+          <div class="j-form-title">资质证明</div>
+          <input type="text" placeholder="请输入">
+        </div>
+        <div class="j-form-item j-clear">
+          <div class="j-form-title">证书编号</div>
+          <input type="text" placeholder="请输入">
+        </div>
+        <div class="j-form-del">删除该资质证明</div>
+      </div>
+      <div class="j-form-add">添加更多资质证明</div>
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>表单组件包括输入框、文字输入区域、单选、多选、下拉菜单、搜索框</p><p>文本输入框和文本输入区域</p></div><div class="ui-show"><div class="j-form"><input type="text" placeholder="文本输入框请输入..."></div><br><div class="j-form"><textarea placeholder="文本输入框请输入..."></textarea></div></div><div class="ui-code"><pre><div class="j-form">
+  <input type="text" placeholder="文本输入区域请输入...">
+</div>
+<div class="j-form">
+  <textarea placeholder="文本输入区域请输入..."></textarea>
 </div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>输入框左右两侧添加按钮</p></div><div class="ui-show"><div class="j-form"><div class="j-input-group"><div class="j-input-group-addon j-input-group-control">left</div><input class="j-input-group-control" type="text" placeholder="请输入..."><div class="j-input-group-addon j-input-group-control">right</div></div></div></div><div class="ui-code"><pre><div class="j-form">
   <div class="j-input-group">
     <div class="j-input-group-addon j-input-group-control">left</div>
     <input class="j-input-group-control" type="text" placeholder="请输入...">
     <div class="j-input-group-addon j-input-group-control">right</div>
   </div>
-</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>文字输入区域</p><p>单选框、多选框默认左浮动，请给外层容器使用“.j-clear”清除浮动</p></div><div class="ui-show"><div class="j-form"><textarea placeholder="请输入..."></textarea><div class="form-box j-clear"><div class="j-form-radio"><input type="radio" id="input1" name="test" checked="checked"><label for="input1">radio1</label></div><div class="j-form-radio"><input type="radio" id="input2" name="test"><label for="input2">radio2</label></div><div class="j-form-radio"><input type="radio" id="input3" name="test"><label for="input3">radio3</label></div><div class="j-form-radio"><input type="radio" id="input4" name="test"><label for="input4">radio4</label></div></div><div class="form-box j-clear"><div class="j-form-checkbox"><input type="checkbox" id="checkbox1" checked="checked"><label for="checkbox1">checkbox1</label></div><div class="j-form-checkbox"><input type="checkbox" id="checkbox2"><label for="checkbox2">checkbox2</label></div><div class="j-form-checkbox"><input type="checkbox" id="checkbox3"><label for="checkbox3">checkbox3</label></div><div class="j-form-checkbox"><input type="checkbox" id="checkbox4"><label for="checkbox4">checkbox4</label></div></div></div></div><div class="ui-code"><pre><div class="j-form">
-  <textarea placeholder="请输入..."></textarea>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>单选框、多选框默认左浮动，请给外层容器使用“.j-clear”清除浮动</p></div><div class="ui-show"><div class="j-form"><div class="form-box j-clear"><div class="j-form-radio"><input type="radio" id="input1" name="test" checked="checked"><label for="input1">radio1</label></div><div class="j-form-radio"><input type="radio" id="input2" name="test"><label for="input2">radio2</label></div><div class="j-form-radio"><input type="radio" id="input3" name="test"><label for="input3">radio3</label></div><div class="j-form-radio"><input type="radio" id="input4" name="test"><label for="input4">radio4</label></div></div><div class="form-box j-clear"><div class="j-form-checkbox"><input type="checkbox" id="checkbox1" checked="checked"><label for="checkbox1">checkbox1</label></div><div class="j-form-checkbox"><input type="checkbox" id="checkbox2"><label for="checkbox2">checkbox2</label></div><div class="j-form-checkbox"><input type="checkbox" id="checkbox3"><label for="checkbox3">checkbox3</label></div><div class="j-form-checkbox"><input type="checkbox" id="checkbox4"><label for="checkbox4">checkbox4</label></div></div></div></div><div class="ui-code"><pre><div class="j-form">
   <div class="form-box j-clear">
     <div class="j-form-radio">
       <input type="radio" id="input1" name="test" checked="checked">
@@ -278,7 +467,125 @@
       <label for="checkbox4">checkbox4</label>
     </div>
   </div>
-</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>下拉菜单在PC和移动端有两种不同的样式（切换浏览器模式查看）</p><p>下拉框默认最大高度340px，超出部分滚动显示</p></div><div class="ui-show"></div><div class="ui-code"><pre></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>下拉菜单支持分级显示操作，要在需要分级的几个select外添加“.j-form-select-group”，每个”添加“data-level”参数，确定级别，如“data-level="1"”</p><p>加入表单两级标题“j-form-title”、“j-form-title-s”</p></div><div class="ui-show"></div><div class="ui-code"><pre></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>日期输入框、文件上传</p></div><div class="ui-show"><div class="j-form"><input type="date"><input type="file"></div></div><div class="ui-code"><pre><div class="j-form">
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>下拉菜单在PC和移动端有两种不同的样式（切换浏览器模式查看）</p><p>下拉框默认最大高度340px，超出部分滚动显示</p></div><div class="ui-show"><div class="j-form">
+<div class="j-form-select">
+<div class="j-form-select-content">请选择</div>
+<select>
+<option value="">请选择</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上">下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+</div>
+</div></div><div class="ui-code"><pre><div class="j-form">
+  <div class="j-form-select">
+    <div class="j-form-select-content">请选择</div>
+    <select>
+      <option value="">请选择</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上">下拉框弹出时，上方选择框箭头向上，下拉框弹出时，上方选择框箭头向上</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>下拉菜单支持分级显示操作，要在需要分级的几个select外添加“.j-form-select-group”，每个”添加“data-level”参数，确定级别，如“data-level="1"”</p><p>加入表单两级标题“j-form-title”、“j-form-title-s”</p></div><div class="ui-show"><div class="j-form">
+<div class="j-form-select-group">
+<div class="j-form-title">请选择与你相符的选项</div>
+<div class="j-form-title-s">省/自治区/直辖市</div>
+<div class="j-form-select" data-level="1">
+<div class="j-form-select-content">请选择</div>
+<select>
+<option value="">请选择</option>
+<option value="天津">天津</option>
+<option value="上海">上海</option>
+<option value="河北">河北</option>
+<option value="山东">山东</option>
+<option value="辽宁">辽宁</option>
+<option value="江苏">江苏</option>
+</select>
+</div>
+<div class="j-form-title-s">市</div>
+<div class="j-form-select" data-level="2">
+<div class="j-form-select-content">请选择</div>
+<select>
+<option value="">请选择</option>
+<option value="a市">a市</option>
+<option value="b市">b市</option>
+<option value="c市">c市</option>
+<option value="d市">d市</option>
+</select>
+</div>
+<div class="j-form-title-s">区</div>
+<div class="j-form-select" data-level="3">
+<div class="j-form-select-content">请选择</div>
+<select>
+<option value="">请选择</option>
+<option value="1区">1区</option>
+<option value="2区">2区</option>
+<option value="3区">3区</option>
+<option value="4区">4区</option>
+</select>
+</div>
+</div>
+</div></div><div class="ui-code"><pre><div class="j-form">
+  <div class="j-form-select-group">
+    <div class="j-form-title">请选择与你相符的选项</div>
+    <div class="j-form-title-s">省/自治区/直辖市</div>
+    <div class="j-form-select" data-level="1">
+      <div class="j-form-select-content">请选择</div>
+      <select>
+        <option value="">请选择</option>
+        <option value="天津">天津</option>
+        <option value="上海">上海</option>
+        <option value="河北">河北</option>
+        <option value="山东">山东</option>
+        <option value="辽宁">辽宁</option>
+        <option value="江苏">江苏</option>
+      </select>
+    </div>
+    <div class="j-form-title-s">市</div>
+    <div class="j-form-select" data-level="2">
+      <div class="j-form-select-content">请选择</div>
+      <select>
+        <option value="">请选择</option>
+        <option value="a市">a市</option>
+        <option value="b市">b市</option>
+        <option value="c市">c市</option>
+        <option value="d市">d市</option>
+      </select>
+    </div>
+    <div class="j-form-title-s">区</div>
+    <div class="j-form-select" data-level="3">
+      <div class="j-form-select-content">请选择</div>
+      <select>
+        <option value="">请选择</option>
+        <option value="1区">1区</option>
+        <option value="2区">2区</option>
+        <option value="3区">3区</option>
+        <option value="4区">4区</option>
+      </select>
+    </div>
+  </div>
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>日期输入框、文件上传</p></div><div class="ui-show"><div class="j-form"><input type="date"><input type="file"></div></div><div class="ui-code"><pre><div class="j-form">
   <input type="date">
   <input type="file">
 </div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>滑动条</p></div><div class="ui-show"><div class="j-form"><input type="range"></div></div><div class="ui-code"><pre><div class="j-form">
