@@ -118,6 +118,10 @@ footer {
   background: #fff;
   padding: 0 10px;
 }
+.ui-toast {
+  position: static;
+  transform: translate(0, 0);
+}
 
 @media(min-width: 768px) {
   .desktop-none {
