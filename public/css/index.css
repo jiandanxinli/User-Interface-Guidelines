@@ -122,6 +122,12 @@ footer {
   position: static;
   transform: translate(0, 0);
 }
+.ui-icon {
+  padding: 10px 0;
+}
+.ui-icon-des {
+  margin-top: 10px
+}
 
 @media(min-width: 768px) {
   .desktop-none {
