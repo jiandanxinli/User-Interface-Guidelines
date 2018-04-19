@@ -128,6 +128,9 @@ footer {
 .ui-icon-des {
   margin-top: 10px
 }
+.ui-radius {
+  width: 100px;
+}
 
 @media(min-width: 768px) {
   .desktop-none {
