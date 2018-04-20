@@ -131,6 +131,11 @@ footer {
 .ui-radius {
   width: 100px;
 }
+.ui-block {
+  width: 140px;
+  background: #fff;
+  padding: 5px 0;
+}
 
 @media(min-width: 768px) {
   .desktop-none {
