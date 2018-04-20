@@ -60,6 +60,12 @@ header {
   margin-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
+.ui-group {
+  margin-bottom: 30px;
+}
+.ui-group:last-child {
+  margin-bottom: 0;
+}
 .ui-show {
   padding: 10px 20px;
   border: 1px solid #bfcaea;
