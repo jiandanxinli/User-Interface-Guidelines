@@ -99,6 +99,12 @@ header {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+.ui-col {
+  padding: 10px 5px;
+}
+.ui-col p {
+  background: #fff;
+}
 footer {
   background: #282A2B;
   text-align: center;
@@ -106,7 +112,6 @@ footer {
   height: 80px;
   line-height: 80px;
 }
-
 .ui-show .j-nav-container,
 .ui-show .j-footer-container {
   width: 100%;
@@ -141,6 +146,13 @@ footer {
   width: 140px;
   background: #fff;
   padding: 5px 0;
+}
+.ui-card {
+  background: #f2f2f2;
+}
+.ui-card-content {
+  background: #fff;
+  height: 100px;
 }
 
 @media(min-width: 768px) {
