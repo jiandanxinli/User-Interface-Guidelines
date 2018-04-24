@@ -154,6 +154,11 @@ footer {
   background: #fff;
   height: 100px;
 }
+.ui-bg {
+  background: #fff;
+  display: inline-block;
+  padding: 10px;
+}
 
 @media(min-width: 768px) {
   .desktop-none {
