@@ -160,6 +160,15 @@ footer {
   padding: 10px;
   margin-right: 10px;
 }
+.ui-display-container {
+  padding: 5px;
+  margin: 5px;
+}
+.ui-display {
+  padding: 5px;
+  margin: 5px;
+  background: #FFF;
+}
 
 @media(min-width: 768px) {
   .desktop-none {
