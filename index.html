@@ -743,9 +743,9 @@ tag.toast({
 </div>
 </pre></div><div class="ui-introduce"><p>或在riot组件中嵌套使用，如：</p></div><div class="ui-code"><pre>activity_...
   ui_swiper(data-slide="false")
-    ...</pre></div></div></div><div class="ui-container" id="loading"><div class="ui-title">加载（loading）</div><div class="ui-group"><div class="ui-introduce"><p>加载</p><p>加载分为两种样式</p><p>列表中使用的样式</p><p>在.j-loading-container层加上.j-loading-list</p></div><div class="ui-show"><div class="ui-bg"><div class="j-loading j-loading-list"><div class="j-loading-rote"></div></div></div></div><div class="ui-code"><pre><div class="j-loading j-loading-list">
+    ...</pre></div></div></div><div class="ui-container" id="loading"><div class="ui-title">加载（loading）</div><div class="ui-group"><div class="ui-introduce"><p>加载</p><p>加载分为两种样式</p><p>列表中使用的样式</p><p>在.j-loading层加上.j-loading-list</p></div><div class="ui-show"><div class="ui-bg"><div class="j-loading j-loading-list"><div class="j-loading-rote"></div></div></div></div><div class="ui-code"><pre><div class="j-loading j-loading-list">
   <div class="j-loading-rote"></div>
-</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>整页中使用的样式</p><p>在.j-loading-container层加上.j-loading-page</p><p>整页模式在PC端为默认400px高，块级元素</p><p>在Mobile端为全屏遮罩</p><div class="ui-show"><div class="ui-bg"><div class="j-loading j-loading-page j-hide-m"><div class="j-loading-rote"></div></div></div></div><div class="ui-code"><pre><div class="j-loading j-loading-page">
+</div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>整页中使用的样式</p><p>在.j-loading层加上.j-loading-page</p><p>整页模式在PC端为默认400px高，块级元素</p><p>在Mobile端为全屏遮罩</p><div class="ui-show"><div class="ui-bg"><div class="j-loading j-loading-page j-hide-m"><div class="j-loading-rote"></div></div></div></div><div class="ui-code"><pre><div class="j-loading j-loading-page">
   <div class="j-loading-rote"></div>
 </div></pre></div></div></div><div class="ui-group"><div class="ui-introduce"><p>加载使用riot制作为独立组件</p><p>名称为ui_loading</p><p>数据（JSON字符串）通过data-banner传入</p><p>ui_loading接收一个参数，data-type，必填</p><p>- list：ui_loading为列表类加载样式</p><p>- page：ui_loading为整页加载样式</p></div><div class="ui-code"><pre>ui_loading(data-type="{{list}}")
 
