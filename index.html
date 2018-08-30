@@ -938,8 +938,12 @@ ui_loading(data-type="{{page}}")</pre></div></div></div><div class="ui-container
   </div>
 </div></pre></div></div><div class="ui-group"><div class="ui-introduce"><p>ui_modal是modal的riot组件</p><p>在父级组件中引入ui_modal</p><p>ui_modal接受一个对象作为参数，参数包括：content、confirm_btn、cancel_btn、confirm</p><p>- content：string 弹窗显示的内容</p><p>- confirm_btn：string/false 确定按钮的文字内容，默认为“确定”，传入false时按钮不显示</p><p>- cancel_btn：string/false 取消按钮的文字内容，默认为“取消”，传入false时按钮不显示</p><p>- confirm_background：string 确定按钮背景颜色</p><p>- cancel_background：string 取消按钮背景颜色</p><p>- confirm_color：string 确定按钮文字颜色</p><p>- cancel_color：string 取消按钮文字颜色</p><p>- confirm：function 点击确定按钮执行的方法，默认为关闭窗口</p></div><div class="ui-code"><pre>ui_modal</pre></div><div class="ui-code"><pre>tag.modal({
   content: '我是弹窗文案',
-  confirm_btn: '我是确定按钮文案',
-  cancel_btn: '我是取消按钮文案',
+  confirm_btn: '我是确定按钮文案' 或 false,
+  cancel_btn: '我是取消按钮文案' 或 false,
+  confirm_background: '#ccc',
+  cancel_background: '#000',
+  confirm_color: '#fff',
+  cancel_color: '#333',
   confirm: function() {
     ...
   }
